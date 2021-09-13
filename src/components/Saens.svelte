@@ -1,7 +1,7 @@
 <script>
 	import { linear } from 'svelte/easing';
-	import { fade, draw, scale } from 'svelte/transition';
-	import { characters } from './shape.js';
+	import { draw } from 'svelte/transition';
+	import { characters } from 'shape.js';
 
 	let visible = false;
 	let size = 1;
@@ -12,6 +12,11 @@
 	}
 </script>
 
+<label >     
+	<input type="checkbox" bind:checked={visible}>
+	    toggle me
+ </label>
+ 
 {#if visible}
 	<div class="container">
 		{#each characters as String, i}
