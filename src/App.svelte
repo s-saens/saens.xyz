@@ -1,76 +1,49 @@
 <script>
-	import { linear } from 'svelte/easing';
-	import { fade, draw, scale } from 'svelte/transition';
-	import { characters } from './shape.js';
+	import Intro from './sections/Intro.svelte';
+	import Map from './sections/Map.svelte';
+	import Greet from './sections/Greet.svelte';
+	import Navbar from './components/Navbar.svelte';
+	import Qna from './sections/Qna.svelte';
+	import Pictures from './sections/Pictures.svelte';
 
-	let visible = false;
-	let size = 1;
-
-	function setVisible()
-	{
-		visible = true;
-	}
+	let sizeY = 3000;
 </script>
 
-{#if visible}
-	<div class="container">
-		{#each characters as String, i}
-		<div class="single" >
-			<svg width="200" height="300">
-				<path
-					in:draw="{{duration: 300, delay: 300*i, easing: linear}}"
-					d={characters[i]}
-				/>
-			</svg>
-		</div>
-		{/each}
-	</div>
-{:else}
-	<body on:pointerenter={setVisible}></body>
-{/if}
+
+<main>
+	<Navbar ></Navbar>
+	<div class="section" id="greet"> <Greet/> </div>
+	<div class="section" id="intro"> <Intro/> </div>
+	<div class="section" id="program"> <Pictures/> </div>
+	<div class="section" id="map"> <Map/> </div>
+	<div class="section" id="qna"> <Qna/> </div>
+</main>
 
 <style>
-	.container {
-		display: flex;
-		overflow:visible;
-		height: auto;
+	main {
+		text-align: center;
+		margin: 0;
+		padding: 0;
 	}
-	.single {
-		padding:3rem;
-		overflow: visible;
-		height: auto;
-		align-items: center;
-		border: black;
-	}
-	svg {
-		transform: scale(1);
-		width: auto;
-		height: auto;
-		transition: 0.2s;
-		transition-duration: 2;
-		border:black;
-	}
-	svg:hover
-	{
-		transform: scale(1.2);
-		transition: 0.2s;
-	}
-	path {
-		fill: transparent;
-		opacity: 1;
-		stroke-linejoin:bevel;
 
-		stroke: black;
-		stroke-width: 15;
-		transition: 0.2s;
-
-		filter: drop-shadow(0, 0, 0, 0.5);
+	.section{
+		height: 100vh;
+		margin: 0;
+		padding: 0;
 	}
-	svg:active:hover > path
-	{
-		stroke: mediumslateblue;
-		stroke-width: 20;
-		transition: 0.2s;
+
+	#program {
+		height: auto;
+	}
+	#intro {
+		height: auto;
+	}
+
+	@media (max-width: 683px) {
+		.section{
+			height: 100vh;
+			margin: 0;
+		}
 	}
 
 </style>

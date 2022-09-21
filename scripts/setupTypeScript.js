@@ -25,7 +25,7 @@ packageJSON.devDependencies = Object.assign(packageJSON.devDependencies, {
   "svelte-check": "^2.0.0",
   "svelte-preprocess": "^4.0.0",
   "@rollup/plugin-typescript": "^8.0.0",
-  "typescript": "4.3.5",
+  "typescript": "^4.0.0",
   "tslib": "^2.0.0",
   "@tsconfig/svelte": "^2.0.0"
 })
@@ -80,7 +80,7 @@ const tsconfig = `{
   "extends": "@tsconfig/svelte/tsconfig.json",
 
   "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "exclude": ["node_modules/*", "__sapper__/*", "docs/*"]
 }`
 const tsconfigPath =  path.join(projectRoot, "tsconfig.json")
 fs.writeFileSync(tsconfigPath, tsconfig)

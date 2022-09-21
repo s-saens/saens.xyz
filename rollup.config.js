@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import fs from 'fs';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -28,13 +29,16 @@ function serve() {
 	};
 }
 
+const greetImages = fs.readdirSync("docs/images/");
+
 export default {
 	input: 'src/main.js',
 	output: {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'docs/build/bundle.js',
+		intro: `const IMAGES_GREET = ${JSON.stringify(greetImages)};`
 	},
 	plugins: [
 		svelte({
@@ -62,9 +66,9 @@ export default {
 		// the bundle has been generated
 		!production && serve(),
 
-		// Watch the `public` directory and refresh the
+		// Watch the `docs` directory and refresh the
 		// browser on changes when not in production
-		!production && livereload('public'),
+		!production && livereload('docs'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
