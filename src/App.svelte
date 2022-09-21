@@ -1,22 +1,16 @@
 <script>
-	import Intro from './sections/Intro.svelte';
-	import Map from './sections/Map.svelte';
-	import Greet from './sections/Greet.svelte';
-	import Navbar from './components/Navbar.svelte';
-	import Qna from './sections/Qna.svelte';
-	import Pictures from './sections/Pictures.svelte';
+	import Splash from './sections/1_Splash.svelte';
+	import Intro from './sections/2_Introduce.svelte';
+	import Contact from './sections/3_Contact.svelte';
 
 	let sizeY = 3000;
 </script>
 
 
 <main>
-	<Navbar ></Navbar>
-	<div class="section" id="greet"> <Greet/> </div>
+	<div class="section" id="splash"> <Splash/> </div>
 	<div class="section" id="intro"> <Intro/> </div>
-	<div class="section" id="program"> <Pictures/> </div>
-	<div class="section" id="map"> <Map/> </div>
-	<div class="section" id="qna"> <Qna/> </div>
+	<div class="section" id="contact"> <Contact/> </div>
 </main>
 
 <style>
@@ -32,18 +26,8 @@
 		padding: 0;
 	}
 
-	#program {
-		height: auto;
-	}
 	#intro {
 		height: auto;
-	}
-
-	@media (max-width: 683px) {
-		.section{
-			height: 100vh;
-			margin: 0;
-		}
 	}
 
 </style>
