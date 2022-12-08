@@ -1,1 +1,0 @@
-- Technologies Used: Svelte, Github Pages
