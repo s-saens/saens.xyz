@@ -23,49 +23,16 @@
 		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
 		<!-- Twitter stuff -->
-		<meta name="author" content="Matt Fantinel" />
+		<meta name="author" content="Saens" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:creator" content="@Matt_Fantinel" />
+		<meta name="twitter:creator" content="@Saens" />
 
-		<!-- Fonts -->
 		<!-- Preload on browsers that support it -->
 		<link rel="preload" as="font" type="text/css" href="/fonts/ubuntu-mono.css" />
 		<link rel="preload" as="font" type="text/css" href="/fonts/wotfard.css" />
 		<!-- Load normally on browsers that don't (Safari) -->
 		<link rel="stylesheet" type="text/css" href="/fonts/ubuntu-mono.css" />
 		<link rel="stylesheet" type="text/css" href="/fonts/wotfard.css" />
-
-		<!-- Plausible - ethical analytics -->
-		<script
-			async
-			defer
-			data-domain="fantinel.dev"
-			src="https://stats.fantinel.dev/js/index.js"
-		></script>
-		<script>
-			window.plausible =
-				window.plausible ||
-				function () {
-					(window.plausible.q = window.plausible.q || []).push(arguments);
-				};
-		</script>
-
-		<script>
-			// The script below uses Plausible to track the % of people that have a dark/light mode preference
-			// But it breaks the Bounce Rate metrics
-			if (plausible) {
-				if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					plausible('Dark Mode Enabled');
-				} else if (
-					window.matchMedia &&
-					window.matchMedia('(prefers-color-scheme: light)').matches
-				) {
-					plausible('Light Mode Enabled');
-				} else {
-					plausible('No Dark/Light Preference');
-				}
-			}
-		</script>
 
 		%sveltekit.head%
 	</head>
