@@ -31,8 +31,8 @@
 </svelte:head>
 
 <div class="markdown-layout">
-	<Header animated={false} />
-
+	<Header animated={true} />
+	<div style="height:9em"/>
 	<main>
 		<article id="markdown-content">
 			<div class="header">

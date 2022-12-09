@@ -1,28 +1,32 @@
 @mixin light-theme {
-	// #region Palette
-	--primary-color: #0ca4a5;
-	--primary-color-rgb: 12, 164, 165;
+	--nav-original-color: 255, 255, 255;
+	--nav-color: linear-gradient(0deg,
+		rgba(var(--nav-original-color), 0) 0%,
+		rgba(var(--nav-original-color), 1) 100%);
+
+	--primary-color: rgb(127, 105, 251);
+	--primary-color-rgb: 112, 88, 245;
 	--primary-color-contrast: #ffffff;
 
-	--primary-light-color: #95caca;
-	--primary-light-color-rgb: 149, 202, 202;
+	--primary-light-color: rgb(172, 157, 255);
+	--primary-light-color-rgb: 172, 157, 255;
 
-	--primary-lightest-color: #e3ffff;
-	--primary-lightest-color-rgb: 227, 255, 255;
+	--primary-lightest-color: rgb(229, 225, 255);
+	--primary-lightest-color-rgb: 229, 225, 255;
 
-	--secondary-color: #7058f5;
-	--secondary-color-rgb: 112, 88, 245;
+	--secondary-color: rgb(34, 202, 202);
+	--secondary-color-rgb: 34, 202, 202;
 	--secondary-color-contrast: #ffffff;
 
-	--secondary-light-color: #b3aae6;
-	--secondary-light-color-rgb: 179, 170, 230;
+	--secondary-light-color: rgb(179, 255, 255);
+	--secondary-light-color-rgb: 179, 255, 255;
 
-	--secondary-lightest-color: #f0f1fe;
-	--secondary-lightest-color-rgb: 242, 240, 254;
+	--secondary-lightest-color: rgb(223, 255, 255);
+	--secondary-lightest-color-rgb: 223, 255, 255;
 	// #endregion
 
-	--page-background-color: #f4f8fb;
-	--page-background-color-rgb: 244, 248, 251;
+	--page-background-color: white;
+	--page-background-color-rgb: 255, 255, 255;
 	--page-background-color-hsl-hue: 206;
 	--page-background-color-hsl-saturation: 47%;
 	--page-background-color-hsl-lightness: 97%;
@@ -31,7 +35,7 @@
 	--text-color-rgb: 28, 30, 38;
 	--text-light-color: #5d5f65;
 
-	--post-page-background-color: #ffffff;
+	--post-page-background-color: white;
 
 	--link-highlight-color: var(--primary-color);
 
@@ -60,11 +64,7 @@
 
 	--image-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
 
-	--footer-background: linear-gradient(
-		60deg,
-		var(--waves-color-start) 0%,
-		var(--waves-color-end) 100%
-	);
+	--footer-background: var(--page-background-color);
 
 	--inline-code-background-color: #e3e3e3;
 
@@ -96,41 +96,48 @@
 }
 
 @mixin dark-theme {
-	// #region Palette
-	--primary-color: #00c2c2;
-	--primary-color-rgb: 0, 194, 194;
+	--nav-original-color: 0, 0, 0;
+	--nav-text-color: white;
+	
 	--primary-color-contrast: #1c1e26;
 
-	--primary-light-color: #076464;
-	--primary-light-color-rgb: 7, 100, 100;
+	--primary-light-color: rgb(44, 34, 98);
+	--primary-light-color-rgb: 53, 38, 135;
 
-	--primary-lightest-color: #191f1f;
-	--primary-lightest-color-rgb: 25, 31, 31;
+	--primary-lightest-color: rgb(32, 24, 81);
+	--primary-lightest-color-rgb: 32, 24, 81;
 
-	--secondary-color: #ec7dff;
-	--secondary-color-rgb: 236, 125, 255;
+	--secondary-color: rgb(34, 202, 202);
+	--secondary-color-rgb: 34, 202, 202;
 	--secondary-color-contrast: #1c1e26;
 
-	--secondary-light-color: #b15ebf;
-	--secondary-light-color-rgb: 177, 94, 191;
+	--secondary-light-color: rgb(21, 115, 115);
+	--secondary-light-color-rgb: 21, 115, 115;
 
-	--secondary-lightest-color: #191a29;
-	--secondary-lightest-color-rgb: 45, 47, 72;
+	--secondary-lightest-color: rgb(11, 59, 59);
+	--secondary-lightest-wacolor: rgb(11, 59, 59);
+	--secondary-lightest-color-rgb: 11, 59, 59;
 	// #endregion
 
-	--page-background-color: #1c1e26;
-	--page-background-color-rgb: 28, 30, 38;
+	--page-background-color: #000000;
+	--page-background-color-rgb: 0, 0, 0;
 	--page-background-color-hsl-hue: 228;
-	--page-background-color-hsl-saturation: 15%;
-	--page-background-color-hsl-lightness: 13%;
+	--page-background-color-hsl-saturation: 0%;
+	--page-background-color-hsl-lightness: 0%;
 
 	--text-color: #fff;
 	--text-color-rgb: 255, 255, 255;
 	--text-light-color: #9eb4b5;
 
-	--post-page-background-color: #141519;
+	--post-page-background-color: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 3%,
+		rgba(0, 0, 0, 1) 97%,
+		rgba(0, 0, 0, 0) 0%,
+	);
 
-	--card-background-color: #32343e;
+	--card-background-color: rgba(46, 42, 78, 0.314);
 	--card-background-color-rgb: 50, 52, 62;
 
 	--button-primary-background-color: var(--primary-color);
@@ -166,9 +173,14 @@
 	--promob-color: #2b4a55;
 }
 
+$darkmode: -1;
 :root {
-	@include light-theme;
-	@media (prefers-color-scheme: dark) {
+	@if($darkmode == 1) {
+		@include light-theme;
+	} @else {
 		@include dark-theme;
 	}
+}
+:export {
+	darkmode: $darkmode;
 }

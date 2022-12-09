@@ -9,27 +9,8 @@
 </script>
 
 <div class="socials">
-	<a href="https://t.me/Matt_Fantinel" target="_blank" rel="noopener" title="Say Hi on Telegram">
-		<TelegramIcon />
-	</a>
 	<a
-		href="https://twitter.com/Matt_Fantinel"
-		target="_blank"
-		rel="noopener"
-		title="Say Hi on Twitter"
-	>
-		<TwitterIcon />
-	</a>
-	<a
-		href="https://bolha.us/@fantinel"
-		target="_blank"
-		rel="me"
-		title="Say Hi on Mastodon"
-	>
-		<MastodonIcon />
-	</a>
-	<a
-		href="https://github.com/MatFantinel"
+		href="https://github.com/s-saens"
 		target="_blank"
 		rel="noopener"
 		title="See my GitHub profile"
@@ -37,18 +18,10 @@
 		<GitHubIcon />
 	</a>
 	<a
-		href="https://www.linkedin.com/in/matheus-fantinel/"
+		href="mailto:songsh5775@gmail.com"
 		target="_blank"
 		rel="noopener"
-		title="Connect on LinkedIn"
-	>
-		<LinkedInIcon />
-	</a>
-	<a
-		href="mailto:matt@fantinel.dev"
-		target="_blank"
-		rel="noopener"
-		title="Send an email to matt@fantinel.dev"
+		title="Send an email to saens"
 	>
 		<EmailIcon />
 	</a>

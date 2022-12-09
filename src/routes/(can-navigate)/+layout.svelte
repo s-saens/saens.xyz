@@ -1,5 +1,4 @@
 <script>
-	import Waves from '$lib/components/layout/waves.svelte';
 	import Header from '$lib/components/layout/header.svelte';
 	import Footer from '$lib/components/layout/footer.svelte';
 
@@ -20,8 +19,6 @@
 	<meta property="og:image" content={image} />
 	<meta name="twitter:image" content={image} />
 </svelte:head>
-
-<Waves />
 
 <Header />
 

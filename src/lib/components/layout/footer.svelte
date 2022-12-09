@@ -6,16 +6,14 @@
 </script>
 
 <footer>
-	<div class="wave">
-		<FooterWave />
-	</div>
 	<div class="content">
 		<div class="copyright">
-			© {currentYear} Matheus Fantinel. Made in Brazil.
+			© {currentYear} SAENS, in Korea
 		</div>
 		<div class="credits">
 			Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener">SvelteKit</a>.
 			Icons by <a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>.
+			Theme by <a href="https://fantinel.dev/" target="_blank" rel="noopener">Matt Fantinel</a>.
 		</div>
 		<div class="socials">
 			<Socials />
@@ -25,9 +23,10 @@
 
 <style lang="scss">
 	footer {
-		height: 340px;
+		height: 16em;
 		width: 100%;
-		background: var(--footer-background);
+		padding: 4.5em 1em 1em 1em;
+		// background: var(--footer-background);
 		display: grid;
 		grid-template-rows: 120px 1fr;
 

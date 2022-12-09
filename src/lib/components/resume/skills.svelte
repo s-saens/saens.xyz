@@ -1,27 +1,20 @@
 <ul class="resume-skills">
 	<li>
-		Front-end
+		Strong at...
 		<div class="tags-container">
-			<span class="tag">React</span>
-			<span class="tag">Svelte</span>
-			<span class="tag">Angular</span>
-			<span class="tag">Vue</span>
-			<span class="tag">NextJS</span>
-			<span class="tag">TypeScript</span>
-			<span class="tag">Ionic</span>
-			<span class="tag">Electron</span>
-			<span class="tag">PWAs</span>
+			<span class="tag">Unity</span>
+			<span class="tag">C#</span>
+			<span class="tag">C++</span>
+			<span class="tag">Java</span>
+			<span class="tag">Algorithm</span>
 		</div>
 	</li>
 	<li>
-		Other
+		Little bit of...
 		<div class="tags-container">
-			<span class="tag secondary">Agile</span>
-			<span class="tag secondary">NodeJS</span>
-			<span class="tag secondary">.NET</span>
-			<span class="tag secondary">Linux</span>
-			<span class="tag secondary">MongoDB</span>
-			<span class="tag secondary">SQL</span>
+			<span class="tag secondary">Jenkins</span>
+			<span class="tag secondary">Go</span>
+			<span class="tag secondary">Javascript</span>
 		</div>
 	</li>
 </ul>

@@ -1,6 +1,5 @@
 <script>
 	import GitHubIcon from '$lib/svg/socials/github.svelte';
-	import LinkedInIcon from '$lib/svg/socials/linkedin.svelte';
 	import EmailIcon from '$lib/svg/socials/email.svelte';
 	import PinIcon from '$lib/svg/pin.svelte';
 	import ChatIcon from '$lib/svg/chat.svelte';
@@ -20,7 +19,7 @@
 <ul class="resume-contact">
 	<li class="birthday">
 		<span class="icon"><StarIcon /></span>
-		<span>{calcYearsSince('1995-08-24')} years old</span>
+		<span>{calcYearsSince('1999-05-26')} years old</span>
 	</li>
 	<li class="experience">
 		<span class="icon"><ExperienceIcon /></span>
@@ -30,27 +29,19 @@
 	</li>
 	<li class="location">
 		<span class="icon"><PinIcon /></span>
-		<span>Caxias do Sul, RS, Brazil</span>
+		<span>Korea</span>
 	</li>
 	<li class="email">
 		<span class="icon"><EmailIcon /></span>
-		<a href="mailto:matt@fantinel.dev">matt@fantinel.dev</a>
-	</li>
-	<li class="linkedin">
-		<span class="icon"><LinkedInIcon /></span>
-		<a href="https://www.linkedin.com/in/matheus-fantinel/" target="_blank"> LinkedIn Profile </a>
-	</li>
-	<li class="website">
-		<span class="icon"><InternetIcon /></span>
-		<a href="https://fantinel.dev" target="_blank"> fantinel.dev </a>
+		<a href="mailto:songsh5775@gmail.com">songsh5775@gmail.com</a>
 	</li>
 	<li class="github">
 		<span class="icon"><GitHubIcon /></span>
-		<a href="https://github.com/matfantinel" target="_blank"> GitHub Profile </a>
+		<a href="https://github.com/s-saens" target="_blank"> GitHub </a>
 	</li>
 	<li class="languages">
 		<span class="icon"><ChatIcon /></span>
-		<span>English, Portuguese</span>
+		<span>English, Korean</span>
 	</li>
 </ul>
 

@@ -64,7 +64,6 @@
 			}
 
 			.button {
-				min-width: 180px;
 				max-width: 100%;
 				width: auto;
 			}

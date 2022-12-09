@@ -5,15 +5,9 @@
 	import Title from './title.svelte';
 	import Skills from './skills.svelte';
 	import Experience from './experience.svelte';
-	import Blob1 from '$lib/svg/blobs/blob1.svelte';
-	import Blob3 from '$lib/svg/blobs/blob3.svelte';
 </script>
 
 <article class="resume">
-	<div class="blobs">
-		<div class="blob one"><Blob1 /></div>
-		<div class="blob two"><Blob3 /></div>
-	</div>
 	<section class="name-and-contact">
 		<Title />
 		<Contact />
@@ -24,9 +18,8 @@
 	<section class="about">
 		<SectionTitle>About</SectionTitle>
 		<p>
-			I have a passion for building fast, responsive and pretty UIs, bringing great designs to
-			reality and improving them as they get built. I love learning new things and applying them in
-			practical solutions, either improving existing services or building completely new ones.
+			I like money, and hate work. I want <b>more money, less work.</b>
+			This would not be a stupid idea with <b>continuous endeavour</b> to improve my technical abilities.
 		</p>
 	</section>
 	<section class="work">
@@ -49,12 +42,9 @@
 
 <style lang="scss">
 	.resume {
-		border-radius: 10px;
-		padding: 35px 0 10px 0;
+		padding: 4em 1em 4em 1em;
 		color: var(--text-color);
-		font-family: var(--default-font);
 		font-size: 16px;
-		background-color: var(--card-background-color);
 		position: relative;
 		overflow: hidden;
 
@@ -84,7 +74,6 @@
 		@media (min-width: 900px), print {
 			margin: 20px auto;
 			max-width: 210mm;
-			box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.6), 1px 3px 8px rgba(39, 44, 49, 0.3);
 		}
 
 		section {
@@ -96,7 +85,7 @@
 				grid-area: name;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
+				// justify-content: space-between;
 			}
 			&.photo {
 				grid-area: photo;
@@ -123,31 +112,6 @@
 			}
 			&.skills {
 				grid-area: skills;
-			}
-		}
-
-		.blobs {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 100%;
-			height: 100%;
-
-			.blob {
-				position: absolute;
-
-				&.one {
-					height: 120%;
-					width: 120%;
-					top: -54%;
-					right: -45%;
-				}
-				&.two {
-					height: 100%;
-					width: 100%;
-					left: 23%;
-					top: 38%;
-				}
 			}
 		}
 	}
