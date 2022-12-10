@@ -4,20 +4,22 @@
 
 	export let animated = true;
 
+	let navState = "on";
 	let y = 0;
 	var lastY = 100;
 	let deltaY = 100;
 	$ : {
 		deltaY = lastY - y;
 		lastY = y;
+		navState = deltaY >= 0 ? "on" : "off";
 	}
+
 </script>
 
 <svelte:window bind:scrollY={y}/>
 
 <header>
-	{#if deltaY >= 0}
-	<nav in:fly={{ y:-100, duration:500 }} out:fly={{ y:-100, duration:500 }}>
+	<nav class={navState}>
 		<a class="logo clickable" href="/" alt="Site logo">
 			S A E N S 
 		</a>
@@ -25,9 +27,8 @@
 			<a href="/blog">Blog</a>
 			<a href="/resume">Resume</a>
 		</div>
-		<div class="clickable"><DarkModeToggle/></div>
+		<div class="clickable"></div><DarkModeToggle/>
 	</nav>
-	{/if}
 </header>
 
 <style lang="scss">
@@ -43,8 +44,8 @@
 		nav {
 			padding: 1em 0;
 			position: fixed;
-			width:100%;
 			height: 9em;
+			width:100%;
 			z-index: 100;
 			display: flex;
 			align-items: center;
@@ -80,6 +81,15 @@
 				flex-direction: column;
 				gap: 15px;
 			}
+		}
+
+		.on {
+			transition-duration: 0.5s;
+		}
+
+		.off {
+			transition-duration: 0.5s;
+			transform: translateY(-9em);
 		}
 
 
