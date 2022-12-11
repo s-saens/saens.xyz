@@ -2,21 +2,36 @@
 	import Moon from "../../svg/moon.svelte";
 	import Sun from "../../svg/sun.svelte";
 
-	let nowDarkmode = 1;
+	const class_dark_mode = "dark-mode";
+	let nowDarkmode = class_dark_mode;
 
-	function toggle() {
-		if(document != undefined){
-			var st = require('../../scss/themes.scss');
-			var value = document.documentElement.style.getPropertyValue("--darkmode");
-			console.log(value);
-			st.setProperty("--darkmode", value * -1);
-		}
+	function toggle()
+	{
+		nowDarkmode = document.documentElement.classList[0];
+		nowDarkmode = nowDarkmode === class_dark_mode ? " " : class_dark_mode;
+		document.documentElement.className = nowDarkmode;
 	}
 </script>
 
 
-<a href="" on:click={toggle}>
-	{#if nowDarkmode}<Sun/>
-	{:else}<Moon/>
+<button on:click={toggle}>
+	{#if nowDarkmode === " "}
+		<Moon/>
+	{:else}
+		<Sun/>
 	{/if}
-</a>
+</button>
+
+
+
+<style>
+	button {
+		pointer-events: all;
+		border: none;
+		background: none;
+	}
+	button:hover {
+		cursor: pointer;
+		transform: scale(1.1);
+	}
+</style>

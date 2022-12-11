@@ -1,13 +1,10 @@
 <script>
-	import { fly } from "svelte/transition";
-	import DarkModeToggle from "./darkModeToggle.svelte";
-
 	export let animated = true;
 
 	let navState = "on";
-	let y = 0;
 	var lastY = 100;
 	let deltaY = 100;
+	let y = 0;
 	$ : {
 		deltaY = lastY - y;
 		lastY = y;
@@ -27,7 +24,6 @@
 			<a href="/blog">Blog</a>
 			<a href="/resume">Resume</a>
 		</div>
-		<div class="clickable"></div><DarkModeToggle/>
 	</nav>
 </header>
 
@@ -42,7 +38,9 @@
 		}
 
 		nav {
-			padding: 1em 0;
+			padding-bottom: 3em;
+			transition-duration: 0.3s;
+			
 			position: fixed;
 			height: 9em;
 			width:100%;
@@ -58,13 +56,16 @@
 			}
 			a:hover {
 				text-decoration: none;
-				text-shadow:  rgba(200, 200, 200, 1) 1px 0 10px;
+				text-shadow:  rgba(200, 200, 200, 1) 0px 0 7px;
 			}
 
 
 			.logo {
 				font-size: 32px;
 				font-weight: 900;
+				.hide {
+					display: none;
+				}
 			}
 
 			.links {
@@ -83,21 +84,13 @@
 			}
 		}
 
-		.on {
-			transition-duration: 0.5s;
-		}
-
 		.off {
-			transition-duration: 0.5s;
 			transform: translateY(-9em);
 		}
 
 
 		.empty-header {
 			height: 9em;
-			@include for-phone-only {
-				height: 9em;
-			}
 		}
 	}
 </style>
