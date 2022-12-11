@@ -1,8 +1,8 @@
 @mixin light-theme {
-	// --nav-color: rgba(var(--nav-original-color), 0.8);
-	--nav-color: linear-gradient(0deg,
-		rgba(var(--nav-original-color), 0) 0%,
-		rgba(var(--nav-original-color), 0.8) 40%);
+	--nav-color: rgba(var(--nav-original-color), 0.5);
+	// --nav-color: linear-gradient(0deg,
+	// 	rgba(var(--nav-original-color), 0) 0%,
+	// 	rgba(var(--nav-original-color), 0.8) 40%);
 	--nav-original-color: 255, 255, 255;
 	--nav-text-color: black;
 

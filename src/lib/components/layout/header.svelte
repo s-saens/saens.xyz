@@ -38,11 +38,10 @@
 		}
 
 		nav {
-			padding-bottom: 3em;
 			transition-duration: 0.3s;
 			
 			position: fixed;
-			height: 9em;
+			height: 8em;
 			width:100%;
 			z-index: 100;
 			display: flex;
@@ -86,11 +85,6 @@
 
 		.off {
 			transform: translateY(-9em);
-		}
-
-
-		.empty-header {
-			height: 9em;
 		}
 	}
 </style>

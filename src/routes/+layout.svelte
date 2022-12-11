@@ -26,7 +26,7 @@
 		position:fixed;
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 1em;
 
 		right: 4em;
 		bottom: 4em;
@@ -38,8 +38,8 @@
 		stroke: var(--text-color);
 
 		@include for-tablet-portrait-down {
-			right: 1em;
-			bottom: 1em;
+			right: 2em;
+			bottom: 2em;
 		}
 	}
 </style>
