@@ -15,6 +15,7 @@
 			<span class="tag secondary">Jenkins</span>
 			<span class="tag secondary">Go</span>
 			<span class="tag secondary">Javascript</span>
+			<span class="tag secondary">Svelte</span>
 		</div>
 	</li>
 </ul>

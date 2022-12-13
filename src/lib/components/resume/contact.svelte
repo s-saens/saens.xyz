@@ -125,10 +125,9 @@
 			grid-template-columns: 1fr 1fr;
 
 			grid-template-areas:
-				'location github'
-				'birthday linkedin'
-				'experience email'
-				'languages website';
+				'location languages'
+				'birthday experience'
+				'github email';
 
 			li {
 				&.email {

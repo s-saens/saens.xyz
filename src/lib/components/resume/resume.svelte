@@ -15,24 +15,15 @@
 	<section class="photo">
 		<Photo />
 	</section>
-	<section class="about">
-		<SectionTitle>About</SectionTitle>
-		<p>
-			I like money, and hate work. I want <b>more money, less work.</b>
-			This would not be a stupid idea with <b>continuous endeavour</b> to improve my technical abilities.
-		</p>
-	</section>
 	<section class="work">
-		<SectionTitle>Professional Experience</SectionTitle>
+		<SectionTitle>Professional Experiences</SectionTitle>
 		<Experience />
 	</section>
 	<section class="education">
 		<SectionTitle>Education</SectionTitle>
-		<p>
-			Graduated as a{' '}
-			<b>Technologist in System Analysis and Development</b> at{' '}
-			<i>Centro Universitário da Serra Gaúcha</i>, 2018.
-		</p>
+		<p>Jeonbuk National Univ.</p>
+		<p>2019~2020</p>
+		<p>4 semesters</p>
 	</section>
 	<section class="skills">
 		<SectionTitle>Skills</SectionTitle>
@@ -54,26 +45,19 @@
 		grid-template-areas:
 			'photo'
 			'name'
-			'about'
 			'skills'
 			'work'
 			'education';
 
 		@media (min-width: 768px), print {
-			padding: 30px 20px;
+			padding: 4em 4em;
 			grid-template-columns: 2fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 2fr 2fr 1fr;
 
 			grid-template-areas:
 				'name photo'
-				'work about'
 				'work skills'
-				'work education';
-		}
-
-		@media (min-width: 900px), print {
-			margin: 20px auto;
-			max-width: 210mm;
+				'work education'
 		}
 
 		section {
@@ -97,7 +81,7 @@
 				grid-area: about;
 
 				p {
-					text-align: justify;
+					text-align: left;
 				}
 			}
 			&.work {
@@ -107,7 +91,7 @@
 				grid-area: education;
 
 				p {
-					text-align: justify;
+					text-align: left;
 				}
 			}
 			&.skills {

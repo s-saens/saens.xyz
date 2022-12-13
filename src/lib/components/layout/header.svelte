@@ -23,6 +23,7 @@
 		<div class="links clickable">
 			<a href="/blog">Blog</a>
 			<a href="/resume">Resume</a>
+			<a href="/projects">Projects</a>
 		</div>
 	</nav>
 </header>

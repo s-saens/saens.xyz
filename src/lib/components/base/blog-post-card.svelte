@@ -8,7 +8,7 @@
 </script>
 
 {#if post}
-	<Card url="/{post.slug}">
+	<Card url="/blog/{post.slug}">
 		<div slot="image">
 			{#if showImage}
 				<Image path="posts/{post.slug}" filename="cover" alt="Cover Image" />

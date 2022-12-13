@@ -24,7 +24,7 @@ const xml = (posts) => `
         <item>
           <title>${post.title}</title>
           <description>${post.excerpt}</description>
-          <link>${siteBaseUrl}/${post.slug}/</link>
+          <link>${siteBaseUrl}/blog/${post.slug}/</link>
           <pubDate>${new Date(post.date).toISOString()}</pubDate>
           ${post.tags ? post.tags.map((tag) => `<category term="${tag}" />`).join('') : ''}
           <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${siteBaseUrl}/images/posts/${
