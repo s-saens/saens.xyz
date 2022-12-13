@@ -1,6 +1,6 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-3041474f.js",
+    "file": "_app/immutable/start-47afe087.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -17,7 +17,9 @@
       ".svelte-kit/generated/nodes/7.js",
       ".svelte-kit/generated/nodes/8.js",
       ".svelte-kit/generated/nodes/9.js",
-      ".svelte-kit/generated/nodes/10.js"
+      ".svelte-kit/generated/nodes/10.js",
+      ".svelte-kit/generated/nodes/11.js",
+      ".svelte-kit/generated/nodes/12.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -122,7 +124,7 @@
     ]
   },
   "src/routes/404/+page.svelte": {
-    "file": "_app/immutable/components/pages/404/_page.svelte-2228e3ff.js",
+    "file": "_app/immutable/components/pages/404/_page.svelte-68452e1f.js",
     "src": "src/routes/404/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -139,6 +141,27 @@
     "imports": [
       "_index-e3f0bc09.js",
       "_article-3e7ae3a5.js"
+    ]
+  },
+  "src/routes/privacy/+page.svelte": {
+    "file": "_app/immutable/components/pages/privacy/_page.svelte-cf224700.js",
+    "src": "src/routes/privacy/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-e3f0bc09.js"
+    ]
+  },
+  "src/routes/privacy/(page)/[slug]/+page.svelte": {
+    "file": "_app/immutable/components/pages/privacy/(page)/_slug_/_page.svelte-60389e58.js",
+    "src": "src/routes/privacy/(page)/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-e3f0bc09.js",
+      "_footer-068f7386.js",
+      "_header-a042598c.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-c70ca25e.css"
     ]
   },
   "src/routes/reviews/elden-ring/+page.md": {
@@ -168,6 +191,14 @@
     "isEntry": true,
     "imports": [
       "__page-0b7eb7fc.js"
+    ]
+  },
+  "src/routes/privacy/(page)/[slug]/+page.js": {
+    "file": "_app/immutable/modules/pages/privacy/(page)/_slug_/_page.js-078d75ed.js",
+    "src": "src/routes/privacy/(page)/[slug]/+page.js",
+    "isEntry": true,
+    "imports": [
+      "__page-d36fde14.js"
     ]
   },
   "_index-e3f0bc09.js": {
@@ -248,6 +279,12 @@
       "_meta-b98ed552.js"
     ]
   },
+  "__page-d36fde14.js": {
+    "file": "_app/immutable/chunks/_page-d36fde14.js",
+    "imports": [
+      "_index-e3f0bc09.js"
+    ]
+  },
   ".svelte-kit/generated/nodes/0.js": {
     "file": "_app/immutable/chunks/0-002ba0a7.js",
     "src": ".svelte-kit/generated/nodes/0.js",
@@ -315,7 +352,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "_app/immutable/chunks/8-494c8ef8.js",
+    "file": "_app/immutable/chunks/8-3e337e61.js",
     "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
@@ -331,44 +368,65 @@
     ]
   },
   ".svelte-kit/generated/nodes/10.js": {
-    "file": "_app/immutable/chunks/10-02f10a1d.js",
+    "file": "_app/immutable/chunks/10-0f9d836e.js",
     "src": ".svelte-kit/generated/nodes/10.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/privacy/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/11.js": {
+    "file": "_app/immutable/chunks/11-08c232aa.js",
+    "src": ".svelte-kit/generated/nodes/11.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-d36fde14.js",
+      "src/routes/privacy/(page)/[slug]/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/12.js": {
+    "file": "_app/immutable/chunks/12-02314ba6.js",
+    "src": ".svelte-kit/generated/nodes/12.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/reviews/elden-ring/+page.md"
     ]
   },
-  "src/routes/+error.css": {
-    "file": "_app/immutable/assets/_error-c1a5aa40.css",
-    "src": "src/routes/+error.css"
-  },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-c79feda1.css",
-    "src": "src/routes/+layout.css"
+  "src/routes/(root)/+page.css": {
+    "file": "_app/immutable/assets/_page-3dc40a22.css",
+    "src": "src/routes/(root)/+page.css"
   },
   "header.css": {
     "file": "_app/immutable/assets/header-287db9fc.css",
     "src": "header.css"
   },
-  "image.css": {
-    "file": "_app/immutable/assets/image-d661376f.css",
-    "src": "image.css"
-  },
-  "src/routes/reviews/elden-ring/+page.css": {
-    "file": "_app/immutable/assets/_page-c4b2b507.css",
-    "src": "src/routes/reviews/elden-ring/+page.css"
-  },
-  "src/routes/(can-navigate)/blog/(blog-article)/+layout.css": {
-    "file": "_app/immutable/assets/_layout-c71ee51f.css",
-    "src": "src/routes/(can-navigate)/blog/(blog-article)/+layout.css"
+  "src/routes/privacy/(page)/[slug]/+page.css": {
+    "file": "_app/immutable/assets/_page-c70ca25e.css",
+    "src": "src/routes/privacy/(page)/[slug]/+page.css"
   },
   "footer.css": {
     "file": "_app/immutable/assets/footer-ba3d7c11.css",
     "src": "footer.css"
   },
-  "section.css": {
-    "file": "_app/immutable/assets/section-a0ef8bf3.css",
-    "src": "section.css"
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-c79feda1.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/+error.css": {
+    "file": "_app/immutable/assets/_error-c1a5aa40.css",
+    "src": "src/routes/+error.css"
+  },
+  "src/routes/(can-navigate)/blog/(blog-article)/+layout.css": {
+    "file": "_app/immutable/assets/_layout-c71ee51f.css",
+    "src": "src/routes/(can-navigate)/blog/(blog-article)/+layout.css"
+  },
+  "src/routes/reviews/elden-ring/+page.css": {
+    "file": "_app/immutable/assets/_page-c4b2b507.css",
+    "src": "src/routes/reviews/elden-ring/+page.css"
+  },
+  "image.css": {
+    "file": "_app/immutable/assets/image-d661376f.css",
+    "src": "image.css"
   },
   "src/routes/404/+page.css": {
     "file": "_app/immutable/assets/_page-bc1c4876.css",
@@ -378,9 +436,9 @@
     "file": "_app/immutable/assets/_page-562b8872.css",
     "src": "src/routes/(can-navigate)/blog/+page.css"
   },
-  "src/routes/(root)/+page.css": {
-    "file": "_app/immutable/assets/_page-3dc40a22.css",
-    "src": "src/routes/(root)/+page.css"
+  "section.css": {
+    "file": "_app/immutable/assets/section-a0ef8bf3.css",
+    "src": "section.css"
   },
   "src/routes/(can-navigate)/resume/+page.css": {
     "file": "_app/immutable/assets/_page-d529df87.css",
