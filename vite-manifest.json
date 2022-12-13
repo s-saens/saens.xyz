@@ -1,6 +1,6 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-7a7b2838.js",
+    "file": "_app/immutable/start-3041474f.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -338,22 +338,6 @@
       "src/routes/reviews/elden-ring/+page.md"
     ]
   },
-  "image.css": {
-    "file": "_app/immutable/assets/image-d661376f.css",
-    "src": "image.css"
-  },
-  "footer.css": {
-    "file": "_app/immutable/assets/footer-ba3d7c11.css",
-    "src": "footer.css"
-  },
-  "src/routes/(can-navigate)/blog/+page.css": {
-    "file": "_app/immutable/assets/_page-562b8872.css",
-    "src": "src/routes/(can-navigate)/blog/+page.css"
-  },
-  "section.css": {
-    "file": "_app/immutable/assets/section-a0ef8bf3.css",
-    "src": "section.css"
-  },
   "src/routes/+error.css": {
     "file": "_app/immutable/assets/_error-c1a5aa40.css",
     "src": "src/routes/+error.css"
@@ -366,17 +350,33 @@
     "file": "_app/immutable/assets/header-287db9fc.css",
     "src": "header.css"
   },
+  "image.css": {
+    "file": "_app/immutable/assets/image-d661376f.css",
+    "src": "image.css"
+  },
+  "src/routes/reviews/elden-ring/+page.css": {
+    "file": "_app/immutable/assets/_page-c4b2b507.css",
+    "src": "src/routes/reviews/elden-ring/+page.css"
+  },
   "src/routes/(can-navigate)/blog/(blog-article)/+layout.css": {
     "file": "_app/immutable/assets/_layout-c71ee51f.css",
     "src": "src/routes/(can-navigate)/blog/(blog-article)/+layout.css"
+  },
+  "footer.css": {
+    "file": "_app/immutable/assets/footer-ba3d7c11.css",
+    "src": "footer.css"
+  },
+  "section.css": {
+    "file": "_app/immutable/assets/section-a0ef8bf3.css",
+    "src": "section.css"
   },
   "src/routes/404/+page.css": {
     "file": "_app/immutable/assets/_page-bc1c4876.css",
     "src": "src/routes/404/+page.css"
   },
-  "src/routes/reviews/elden-ring/+page.css": {
-    "file": "_app/immutable/assets/_page-c4b2b507.css",
-    "src": "src/routes/reviews/elden-ring/+page.css"
+  "src/routes/(can-navigate)/blog/+page.css": {
+    "file": "_app/immutable/assets/_page-562b8872.css",
+    "src": "src/routes/(can-navigate)/blog/+page.css"
   },
   "src/routes/(root)/+page.css": {
     "file": "_app/immutable/assets/_page-3dc40a22.css",
