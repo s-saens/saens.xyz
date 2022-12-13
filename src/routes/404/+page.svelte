@@ -1,12 +1,8 @@
-<script>
-	import Error from '$lib/svg/error.svelte';
-</script>
-
 <div class="error-page">
 	<div class="container">
 		<h1>ERROR</h1>
 		<p>SOMETHING WENT WRONG!</p>
-		<a class="button secondary" href="/">Go Home</a>
+		<a class="button secondary" href="/">Start over</a>
 	</div>
 </div>
 

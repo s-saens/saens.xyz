@@ -14,7 +14,8 @@ export const entries = [
 		projects: [
 			{
 				title: 'iMaze',
-				link: '/projects/imaze',
+				link: '',
+				// link: '/projects/imaze',
 				desc: 'Built a hyper-casual game with Unity from scratch. Automated build and deployment processes with Jenkins.'
 			}
 		],
