@@ -38,6 +38,8 @@
 		font-size: 16px;
 		position: relative;
 		overflow: hidden;
+		max-width: 960px;
+		margin: 0 auto;
 
 		display: grid;
 		gap: 20px 30px;
@@ -76,13 +78,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-			}
-			&.about {
-				grid-area: about;
-
-				p {
-					text-align: left;
-				}
 			}
 			&.work {
 				grid-area: work;

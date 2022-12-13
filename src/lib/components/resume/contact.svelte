@@ -57,11 +57,9 @@
 		grid-template-columns: 1fr 1fr;
 
 		grid-template-areas:
-			'email email'
-			'website website'
 			'location languages'
 			'birthday experience'
-			'github linkedin';
+			'github email';
 
 		li {
 			display: flex;
@@ -102,13 +100,6 @@
 				grid-area: email;
 				margin: 0 auto;
 			}
-			&.linkedin {
-				grid-area: linkedin;
-			}
-			&.website {
-				grid-area: website;
-				display: none;
-			}
 			&.github {
 				grid-area: github;
 			}
@@ -124,17 +115,9 @@
 			grid-gap: 5px;
 			grid-template-columns: 1fr 1fr;
 
-			grid-template-areas:
-				'location languages'
-				'birthday experience'
-				'github email';
-
 			li {
 				&.email {
 					margin: 0;
-				}
-				&.website {
-					display: flex;
 				}
 			}
 		}
@@ -146,7 +129,6 @@
 				'birthday email'
 				'experience website';
 
-			.linkedin,
 			.github {
 				display: none;
 			}

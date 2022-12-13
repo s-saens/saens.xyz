@@ -41,4 +41,8 @@ html {
 	position: relative;
 }
 
+path {
+	stroke: var(--text-color);
+}
+
 @import './lib/scss/markdown.scss';

@@ -35,7 +35,6 @@
 		height: auto;
 
 		color: var(--text-color);
-		stroke: var(--text-color);
 
 		@include for-tablet-portrait-down {
 			right: 2em;

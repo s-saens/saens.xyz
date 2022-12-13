@@ -11,9 +11,12 @@
 			© {currentYear} SAENS, in Korea
 		</div>
 		<div class="credits">
-			Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener">SvelteKit</a>.
-			Icons by <a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>.
-			Theme by <a href="https://fantinel.dev/" target="_blank" rel="noopener">Matt Fantinel</a>.
+			Powered by
+				<a href="https://kit.svelte.dev/" target="_blank" rel="noopener">SvelteKit</a>
+			and
+				<a href="https://github.com/matfantinel/matfantinel.github.io" target="_blank" rel="noopener">Matt Fantinel's project</a>.
+			Icons by
+				<a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>.
 		</div>
 		<div class="socials">
 			<Socials />

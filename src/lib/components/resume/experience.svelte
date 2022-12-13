@@ -3,6 +3,8 @@
 	import CircleIcon from '$lib/svg/circle.svelte';
 	import LowAccentHighlight from '$lib/components/style/low-accent-highlight.svelte';
 	import { entries } from '$lib/experience';
+
+	import Link from '../../svg/link.svelte';
 </script>
 
 <div class="resume-experience">
@@ -19,14 +21,26 @@
 			<div class="content">
 				<div class="title">
 					<div>
-						<span class="company-name logitix">
+						<span class="company-name">
 							<LowAccentHighlight id={entry.id}>{entry.title}</LowAccentHighlight>
 						</span>
 					</div>
 					<small>{entry.jobTitle} | <span class="icon"><PinIcon /></span> {entry.location}</small>
 				</div>
 
-				<p>{entry.description}</p>
+				<ul>
+				{#each entry.projects as project}
+				<li>
+					<p class="project-title">{project.title}
+						{#if project.link != ''}
+							<a href={project.link} class="project-link"><Link/></a>
+						{/if}
+					</p>
+					
+					<p class="project-desc">{project.desc}</p>
+					</li>
+				{/each}
+				</ul>
 			</div>
 		</div>
 	{/each}
@@ -83,15 +97,6 @@
 				}
 			}
 
-			// &:first-child {
-			//   .timeline {
-			//     .line {
-			//       top: 10px;
-			//       height: calc(100% + 6px);
-			//     }
-			//   }
-			// }
-
 			&:not(:last-child) {
 				padding-bottom: 16px;
 			}
@@ -140,6 +145,25 @@
 				margin-top: 10px;
 				text-align: justify;
 			}
+		}
+		.project-link {
+			align-items: center;
+			width: 32px;
+			height: 32px;
+		}
+		.project-title {
+			font-weight: 500;
+		}
+		.project-desc {
+			font-size: 14px;
+			padding: -40px;
+			margin: 0;
+			font-weight: 200;
+			color: var(--text-second-light-color);
+		}
+
+		ul {
+			margin-left: 1em;
 		}
 	}
 </style>

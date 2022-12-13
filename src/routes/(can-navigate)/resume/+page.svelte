@@ -19,7 +19,7 @@
 	.resume-wrapper {
 		position: relative;
 		padding: 1em;
-		min-height: 80vh
+		min-height: 80vh;
 	}
 	@media print {
 		.resume-wrapper {

@@ -7,13 +7,17 @@ export const entries = [
 	{
 		id: 'freelancer',
 		title: 'Freelancer',
-		jobTitle: 'Game & Web Developer',
+		jobTitle: 'Free Developer',
 		timeframe: '2022 → Now',
-	  current: true,
-	  location: 'Home',
-		description:
-			`"iMaze" from scratch. Used Unity for client, and Go-lang for server, Jenkins for auto build & deployment.
-			`,
+		current: true,
+		location: 'Home',
+		projects: [
+			{
+				title: 'iMaze',
+				link: '/projects/imaze',
+				desc: 'Built a hyper-casual game with Unity from scratch. Automated build and deployment processes with Jenkins.'
+			}
+		],
 		tags: [
 			{
 				color: 'primary',
@@ -22,11 +26,7 @@ export const entries = [
 			{
 				color: 'primary',
 				text: 'Jenkins'
-			},
-			{
-				color: 'primary',
-				text: 'Go'
-			},
+			}
 		]
 	},
 	{
@@ -35,15 +35,26 @@ export const entries = [
 		jobTitle: 'Unity Client Programmer',
 		timeframe: '2021 → 2022',
 		location: 'Seoul',
-		description:
-			[
-				`The first Google Instance version of "Dragon Ace Casino - Baccarat" from nothing`,
-				`Buil`
-			],
+		projects: [
+			{
+				title: 'Dragon Ace Casino - Baccarat (Google Instant)',
+				link: '',
+				desc: 'Built the first Google Instant version of Dragon Ace Baccarat.'
+			},
+			{
+				title: 'Dragon Ace Casino - Slot',
+				link: '',
+				desc: 'Built the first and second versions of Slot games in Dragon Ace Casino.'
+			}
+		],
 		tags: [
 			{
 				color: 'primary',
 				text: 'Unity'
+			},
+			{
+				color: 'primary',
+				text: 'Jenkins'
 			}
 		]
 	}

@@ -16,7 +16,7 @@
 
 	h5 {
 		color: var(--text-light-color);
-		margin: 0;
+		margin: 0 0 2em 0;
 		font-size: 24px;
 		font-weight: 300;
 		text-align: center;
