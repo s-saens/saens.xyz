@@ -1,10 +1,11 @@
 <script>
-	import Footer from "../../../../lib/components/layout/footer.svelte";
-import Header from "../../../../lib/components/layout/header.svelte";
 
+	import Footer from "../../../../lib/components/layout/footer.svelte";
+	import Header from "../../../../lib/components/layout/header.svelte";
 
 	export let data;
 	$: ({ page } = data);
+
 </script>
 
 <Header/>
@@ -17,10 +18,6 @@ import Header from "../../../../lib/components/layout/header.svelte";
 	.container {
 		padding: 10em 1em 4em 1em;
 		max-width: 960px;
-	}
-
-	p {
-		color: black;
 	}
 </style>
 

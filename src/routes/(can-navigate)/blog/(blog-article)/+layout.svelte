@@ -72,6 +72,4 @@
 			</div>
 		{/if}
 	</main>
-
-	<Footer />
 </div>
