@@ -1,0 +1,1 @@
+window.__sveltekit_data = (function(a,b,c){return {type:b,nodes:[c,c,{type:b,data:{posts:[{slug:"001",title:"Opening of a Blog",date:"2022-12-13T00:00:00.000Z",excerpt:"this is a useless post that I wrote my thoughts of this blog.",tags:["Diary"],readingTime:"1 min read"}]},uses:{dependencies:a,params:a,parent:a,url:a}}]}}(void 0,"data",null))

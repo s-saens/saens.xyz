@@ -1,0 +1,19 @@
+
+<rss xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:content="https://purl.org/rss/1.0/modules/content/" xmlns:atom="https://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>SAENS</title>
+    <link>https://saens.xyz</link>
+    <description>Developer</description>
+    
+        <item>
+          <title>Opening of a Blog</title>
+          <description>this is a useless post that I wrote my thoughts of this blog.</description>
+          <link>https://saens.xyz/blog/001/</link>
+          <pubDate>2022-12-13T00:00:00.000Z</pubDate>
+          <category term="Diary" />
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://saens.xyz/images/posts/001/cover.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://saens.xyz/images/posts/001/cover.jpg"/>
+        </item>
+      
+  </channel>
+</rss>
