@@ -1,11 +1,11 @@
 {
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-fe05307e.js",
+    "file": "_app/immutable/start-bffef5d4.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-f1216d6c.js",
-      "_singletons-cbaf44e5.js"
+      "_singletons-7051491a.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -115,7 +115,7 @@
     ]
   },
   "src/routes/(can-navigate)/projects/[title]/+page.svelte": {
-    "file": "_app/immutable/components/pages/(can-navigate)/projects/_title_/_page.svelte-5f220eef.js",
+    "file": "_app/immutable/components/pages/(can-navigate)/projects/_title_/_page.svelte-549da015.js",
     "src": "src/routes/(can-navigate)/projects/[title]/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -124,7 +124,7 @@
       "_projects-4238650f.js",
       "_tag-8a76dcb7.js",
       "_image-91c0c31e.js",
-      "_singletons-cbaf44e5.js"
+      "_singletons-7051491a.js"
     ],
     "css": [
       "_app/immutable/assets/_page-924b6b1c.css"
@@ -233,8 +233,8 @@
       "__page-a904de25.js"
     ]
   },
-  "_singletons-cbaf44e5.js": {
-    "file": "_app/immutable/chunks/singletons-cbaf44e5.js",
+  "_singletons-7051491a.js": {
+    "file": "_app/immutable/chunks/singletons-7051491a.js",
     "imports": [
       "_index-f1216d6c.js"
     ]
@@ -393,7 +393,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/7.js": {
-    "file": "_app/immutable/chunks/7-f0d03e36.js",
+    "file": "_app/immutable/chunks/7-d046cb13.js",
     "src": ".svelte-kit/generated/nodes/7.js",
     "isDynamicEntry": true,
     "imports": [
@@ -457,49 +457,49 @@
       "src/routes/reviews/elden-ring/+page.md"
     ]
   },
-  "image.css": {
-    "file": "_app/immutable/assets/image-68278ab0.css",
-    "src": "image.css"
-  },
-  "_page.css": {
-    "file": "_app/immutable/assets/_page-59d3be5a.css",
-    "src": "_page.css"
-  },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-7eca679f.css",
-    "src": "src/routes/+layout.css"
+  "src/routes/(can-navigate)/projects/+page.css": {
+    "file": "_app/immutable/assets/_page-6cea63c4.css",
+    "src": "src/routes/(can-navigate)/projects/+page.css"
   },
   "src/routes/(can-navigate)/blog/(blog-article)/+layout.css": {
     "file": "_app/immutable/assets/_layout-c71ee51f.css",
     "src": "src/routes/(can-navigate)/blog/(blog-article)/+layout.css"
   },
-  "section.css": {
-    "file": "_app/immutable/assets/section-5503a7f2.css",
-    "src": "section.css"
-  },
-  "src/routes/+error.css": {
-    "file": "_app/immutable/assets/_error-c1a5aa40.css",
-    "src": "src/routes/+error.css"
-  },
-  "src/routes/(can-navigate)/projects/+page.css": {
-    "file": "_app/immutable/assets/_page-6cea63c4.css",
-    "src": "src/routes/(can-navigate)/projects/+page.css"
-  },
   "src/routes/(can-navigate)/blog/+page.css": {
     "file": "_app/immutable/assets/_page-562b8872.css",
     "src": "src/routes/(can-navigate)/blog/+page.css"
   },
-  "tag.css": {
-    "file": "_app/immutable/assets/tag-9942ccb2.css",
-    "src": "tag.css"
+  "section.css": {
+    "file": "_app/immutable/assets/section-5503a7f2.css",
+    "src": "section.css"
+  },
+  "image.css": {
+    "file": "_app/immutable/assets/image-68278ab0.css",
+    "src": "image.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-7eca679f.css",
+    "src": "src/routes/+layout.css"
+  },
+  "_page.css": {
+    "file": "_app/immutable/assets/_page-59d3be5a.css",
+    "src": "_page.css"
   },
   "footer.css": {
     "file": "_app/immutable/assets/footer-0d3b9326.css",
     "src": "footer.css"
   },
-  "src/routes/404/+page.css": {
-    "file": "_app/immutable/assets/_page-bc1c4876.css",
-    "src": "src/routes/404/+page.css"
+  "src/routes/+error.css": {
+    "file": "_app/immutable/assets/_error-c1a5aa40.css",
+    "src": "src/routes/+error.css"
+  },
+  "tag.css": {
+    "file": "_app/immutable/assets/tag-9942ccb2.css",
+    "src": "tag.css"
+  },
+  "src/routes/(root)/+page.css": {
+    "file": "_app/immutable/assets/_page-3dc40a22.css",
+    "src": "src/routes/(root)/+page.css"
   },
   "src/routes/reviews/elden-ring/+page.css": {
     "file": "_app/immutable/assets/_page-c4b2b507.css",
@@ -509,9 +509,9 @@
     "file": "_app/immutable/assets/_page-c55a7ee8.css",
     "src": "src/routes/privacy/(page)/[slug]/+page.css"
   },
-  "src/routes/(root)/+page.css": {
-    "file": "_app/immutable/assets/_page-3dc40a22.css",
-    "src": "src/routes/(root)/+page.css"
+  "src/routes/404/+page.css": {
+    "file": "_app/immutable/assets/_page-bc1c4876.css",
+    "src": "src/routes/404/+page.css"
   },
   "src/routes/(can-navigate)/resume/+page.css": {
     "file": "_app/immutable/assets/_page-d529df87.css",
