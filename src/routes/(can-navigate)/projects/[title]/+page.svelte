@@ -12,7 +12,7 @@
 </script>
 
 <div in:fly="{{y:100, duration:1000}}" out:fade class="wrapper">
-	<div style="height:6em"/>
+	<div style="height:5em"/>
 	<Project project={project}/>
 </div>
 

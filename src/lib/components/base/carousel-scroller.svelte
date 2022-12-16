@@ -22,11 +22,13 @@
 		if(carousel) lastMove();
 	}
 	function lastMove() {
+		if(!carousel) return;
+		
 		carousel.scrollLeft -= deltaX;
 		const sign = Math.sign(deltaX);
 		deltaX -= 0.5 * sign;
 
-		if (deltaX != 0) {
+		if (deltaX != 0 && carousel) {
 			requestAnimationFrame(lastMove);
 		}
 	}

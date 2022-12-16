@@ -28,7 +28,6 @@
 		"rehype-slug": "^5.0.0",
 		"sass": "^1.38.0",
 		"svelte": "^3.49.0",
-		"svelte-carousel": "^1.0.20",
 		"svelte-preprocess": "^4.7.4",
 		"svelte-sitemap": "^2.0.1",
 		"vite": "^3.0.0"

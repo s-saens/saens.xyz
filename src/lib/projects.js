@@ -7,7 +7,6 @@ const entries = [
 		links: [
 			'https://play.google.com/store/apps/details?id=com.saens.MazeR',
 			'https://apps.apple.com/us/app/imaze/id6443496386',
-			'dummy_link'
 		],
 		desc: `
 			Players should make a ball escape mazes that will be generated randomly.
@@ -16,7 +15,7 @@ const entries = [
 			'1',
 			'2',
 			'3',
-			'1'
+			'4'
 		],
 		releases: [
 			{
@@ -51,30 +50,30 @@ const entries = [
 			'Jenkins',
 		]
 	},
-	{
-		title: 'Blog',
-		prefix: '',
-		category: 'Web',
-		start: 2022-12-8,
-		links: [
-			'https://saens.xyz'
-		],
-		desc: `
-			Blog for posting my works or thoughts.
-		`,
-		images: {
-			cover: '',
-			screenshots: [
-				'',
-				''
-			]
-		},
-		releases: [
-		],
-		tags: [
-			'Svelte',
-		]
-	},
+	// {
+	// 	title: 'Blog',
+	// 	prefix: '',
+	// 	category: 'Web',
+	// 	start: 2022-12-8,
+	// 	links: [
+	// 		'https://saens.xyz'
+	// 	],
+	// 	desc: `
+	// 		Blog for posting my works or thoughts.
+	// 	`,
+	// 	images: {
+	// 		cover: '',
+	// 		screenshots: [
+	// 			'',
+	// 			''
+	// 		]
+	// 	},
+	// 	releases: [
+	// 	],
+	// 	tags: [
+	// 		'Svelte',
+	// 	]
+	// }
 	// {
 	// 	title: 'Ilarm',
 	// 	prefix: 'Life-style',

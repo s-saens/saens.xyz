@@ -19,12 +19,12 @@
 		<Image	path="projects/{project.title}"
 				filename="cover"
 				alt="cover image"
-				add_style="border-radius:40px; box-shadow:0 0 40px 0 rgba(40,40,40,0.5)"
+				add_style="border-radius:40px; box-shadow:0 0 20px 0 rgba(8, 8, 8, 0.4)"
 		/>
 	</section>
 	<section class="title">
 		<h1 class="title-content">{project.title}</h1>
-		<div class="title-content">
+		<div class="title-content links">
 		{#each project.links as l}
 				<a href={l} class="link"><svelte:component this={determinePlatform(l)}/></a>
 		{/each}
@@ -48,6 +48,20 @@
 			</div>
 		</div>
 	</section>
+	<section class="releases">
+		<h2>Release History</h2>
+		{#each project.releases as r}
+			<details>
+				<summary>
+					<b>{r.version}</b> - {r.date}
+				</summary>
+				
+				<ul>
+					{#each r.changes as c}<li>{c}</li>{/each}
+				</ul>
+			</details>
+		{/each}
+	</section>
 </article>
 <CarouselScroller/>
 
@@ -61,22 +75,18 @@
 		position: relative;
 
 		display: grid;
-		gap: 0 60px;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 2fr 1fr 3fr;
+		gap: 0 50px;
+		grid-template-columns: 1fr 3fr;
 		grid-template-areas:
 			'photo title'
 			'photo tags'
-			'photo screenshots';
+			'screenshots screenshots'
+			'releases releases';
 		@include for-tablet-portrait-down {
 			padding: 4em 1em;
-			gap: 0 40px;
-			grid-template-columns: 3fr 5fr;
+			gap: 20px 40px;
+			grid-template-columns: 2fr 5fr;
 			grid-template-rows: 1fr 1fr;
-			grid-template-areas:
-				'photo title'
-				'photo tags'
-				'screenshots screenshots';
 		}
 		@include for-phone-only {
 			padding: 4em 1em;
@@ -87,28 +97,39 @@
 				'title'
 				'tags'
 				'photo'
-				'screenshots';
+				'screenshots'
+				'releases';
 		}
 
 		section {
 			margin: auto 0;
 			&.title {
 				grid-area: title;
+				margin-left:auto;
 
 				display: flex;
-				border-bottom: 5px solid var(--primary-color);
+				justify-content: right;
+				border-bottom: 2px solid transparent;
+				border-image: linear-gradient(to left, #782dc280 0%, #3c4cb580 100%);
+				border-image-slice: 1;
 
 				.title-content {
-					margin-block: auto;
+					margin: auto 0;
 					height: auto;
 				}
 				
+				.links{
+					@include for-phone-only {
+						margin:auto;
+					}
+				}
+
 				@include for-phone-only {
 					margin-inline: auto;
-					border: none;
 				}
 				@include for-iphone-se {
 					flex-direction: column;
+					padding-bottom: 1em;
 				}
 			}
 			&.photo {
@@ -120,8 +141,9 @@
 				grid-area: tags;
 
 				display: flex;
+				justify-content: right;
 				gap: 10px;
-				height: 40px;
+				height: 36px;
 				margin-top:0;
 
 				@include for-phone-only {
@@ -136,11 +158,13 @@
 			&.screenshots {
 				grid-area: screenshots;
 
+				margin-top: 40px;
 				overflow: hidden;
-				height: 140px;
+				height: 256px;
 				border-radius: 20px;
 
-				box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.5);
+
+				box-shadow:0 0 20px 0 rgba(9, 9, 9, 0.4);
 
 				.carousel-wrapper {
 					overflow-x: scroll;
@@ -149,22 +173,42 @@
 
 				.carousel {
 					display: flex;
-					height: 140px;
+					height: 256px;
 					width:max-content;
 					background-color: var(--page-background-color);
-					gap: 0 1px;
 
 					@include for-phone-only {
-						height: 240px;
+						height: 256px;
 					}
 				}
 
-				@include for-tablet-portrait-down {
-					margin-top: 40px;
-				}
 				@include for-phone-only {
 					margin-top: 10px;
-						height: 240px;
+						height: 256px;
+				}
+			}
+			&.releases {
+				grid-area: releases;
+
+				margin-top:4em;
+				gap:2em;
+
+				details {
+					background-color: var(--card-background-color);
+					border-radius: 20px;
+					box-shadow: 0 0 16px 0 rgba(8, 8, 8, 0.2);
+					padding:1em;
+					margin:2em 0;
+					gap:8px;
+					display: flex;
+					justify-content: space-between;
+
+					ul {
+						margin-left: 2em;
+					}
+					summary {
+						padding:1em;
+					}
 				}
 			}
 		}
