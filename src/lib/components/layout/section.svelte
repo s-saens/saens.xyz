@@ -77,37 +77,32 @@
 			align-items: center;
 		}
 
-		@include for-tablet-portrait-up {
-			&.left {
-				.title-area {
-					order: 1;
-				}
-				.content-area {
-					order: 2;
-				}
+		&.left {
+			.title-area {
+				order: 1;
 			}
-			&.right {
-				.title-area {
-					order: 2;
-				}
-				.content-area {
-					order: 1;
-				}
-			}
-			&.top {
-				flex-direction: column;
-				.title-area {
-					order: 1;
-					max-width: 600px;
-				}
-				.content-area {
-					order: 2;
-					width: 100%;
-				}
+			.content-area {
+				order: 2;
 			}
 		}
-		@include for-phone-only {
+		&.right {
+			.title-area {
+				order: 2;
+			}
+			.content-area {
+				order: 1;
+			}
+		}
+		&.top {
 			flex-direction: column;
+			.title-area {
+				order: 1;
+				max-width: 600px;
+			}
+			.content-area {
+				order: 2;
+				width: 100%;
+			}
 		}
 	}
 </style>

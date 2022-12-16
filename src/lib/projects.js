@@ -19,13 +19,6 @@ const entries = [
 		],
 		releases: [
 			{
-				version: '1.000',
-				date: '2022.10.14',
-				changes: [
-					'Initial version',
-				]
-			},
-			{
 				version: '1.010',
 				date: '2022.12.9',
 				changes: [
@@ -36,14 +29,12 @@ const entries = [
 				]
 			},
 			{
-				version: '1.02X',
-				date: '2023 summer',
+				version: '1.000',
+				date: '2022.10.14',
 				changes: [
-					'Server will be run',
-					'Cloud saving system (with MySQL and Go Server)',
-					'Ranking system (with Redis)'
+					'Initial version',
 				]
-			}
+			},
 		],
 		tags: [
 			'Unity',

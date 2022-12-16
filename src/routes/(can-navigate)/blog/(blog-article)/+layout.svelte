@@ -30,7 +30,7 @@
 </svelte:head>
 
 <div class="markdown-layout" in:fly="{{y:100, duration:1000}}" out:fade id="blog">
-	<div style="height:9em"/>
+	<div style="height:7em"/>
 	<main>
 		<article id="markdown-content">
 			<div class="header">
@@ -45,9 +45,6 @@
 						<Tag>{tag}</Tag>
 					{/each}
 				</div>
-			</div>
-			<div class="cover-image">
-				<Image path="posts/{post.slug}" filename="cover" alt="Cover Image" />
 			</div>
 			<div class="content">
 				<slot />

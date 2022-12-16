@@ -35,4 +35,4 @@
 
 </script>
 
-<svelte:window on:mousedown|preventDefault={onMouseDown} on:mousemove={onMouseMove} on:mouseup={end} on:contextmenu={end}/>
+<svelte:window on:mousedown|preventDefault={onMouseDown} on:mousemove={onMouseMove} on:mouseup={end} on:contextmenu={end} on:scroll={end}/>

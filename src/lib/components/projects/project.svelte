@@ -4,7 +4,8 @@
 	import Android_Icon from '../../svg/store-links/android_icon.svelte';
 	import Default_Icon from '../../svg/store-links/default_icon.svelte';
 	import Image from '../base/image.svelte';
-	import CarouselScroller from '../base/carousel-scroller.svelte';
+	import CarouselScroller from '../carousel/carousel-scroller.svelte';
+	import Carousel from '../carousel/carousel.svelte';
 	export let project;
 
 	function determinePlatform(path) {
@@ -15,13 +16,6 @@
 </script>
 
 <article class="container">
-	<section class="photo">
-		<Image	path="projects/{project.title}"
-				filename="cover"
-				alt="cover image"
-				add_style="border-radius:40px; box-shadow:0 0 20px 0 rgba(8, 8, 8, 0.4)"
-		/>
-	</section>
 	<section class="title">
 		<h1 class="title-content">{project.title}</h1>
 		<div class="title-content links">
@@ -35,9 +29,17 @@
 			<Tag>{t}</Tag>
 		{/each}
 	</section>
+	<section class="photo">
+		<Image	path="projects/{project.title}"
+				filename="cover"
+				alt="cover image"
+				add_style="border-radius:40px; box-shadow:3px 5px 20px 0 rgba(8, 8, 8, 0.4)"
+		/>
+	</section>
 	<section class="screenshots">
-		<div class="carousel-wrapper">
-			<div class="carousel">
+		<h2 style="text-align: center">Screenshots</h2>
+		<div class="carousel-container">
+		<Carousel height="256px">
 			{#each project.screenshots as i}
 				<div class="img-container">
 				<Image  path="projects/{project.title}"
@@ -45,7 +47,7 @@
 						alt={i}/>
 				</div>
 			{/each}
-			</div>
+		</Carousel>
 		</div>
 	</section>
 	<section class="releases">
@@ -76,29 +78,21 @@
 
 		display: grid;
 		gap: 0 50px;
-		grid-template-columns: 1fr 3fr;
+		grid-template-columns: 1fr 2fr;
 		grid-template-areas:
 			'photo title'
 			'photo tags'
 			'screenshots screenshots'
 			'releases releases';
 		@include for-tablet-portrait-down {
-			padding: 4em 1em;
+			padding: 4em 3em;
 			gap: 20px 40px;
-			grid-template-columns: 2fr 5fr;
-			grid-template-rows: 1fr 1fr;
 		}
 		@include for-phone-only {
 			padding: 4em 1em;
 			gap: 30px 30px;
-			grid-template-columns: 1fr;
-			grid-template-rows: 1fr;
-			grid-template-areas:
-				'title'
-				'tags'
-				'photo'
-				'screenshots'
-				'releases';
+			display: flex;
+			flex-direction: column;
 		}
 
 		section {
@@ -108,7 +102,6 @@
 				margin-left:auto;
 
 				display: flex;
-				justify-content: right;
 				border-bottom: 2px solid transparent;
 				border-image: linear-gradient(to left, #782dc280 0%, #3c4cb580 100%);
 				border-image-slice: 1;
@@ -132,59 +125,46 @@
 					padding-bottom: 1em;
 				}
 			}
+			&.tags {
+				grid-area: tags;
+				margin-left: auto;
+				margin-top: 0;
+
+				display: flex;
+				gap: 10px;
+				height: 36px;
+
+				@include for-phone-only {
+					margin-inline: auto;
+				}
+				@include for-iphone-se {
+					hieght:40px;
+				}
+			}
 			&.photo {
 				grid-area: photo;
 
 				text-align: right;
 			}
-			&.tags {
-				grid-area: tags;
-
-				display: flex;
-				justify-content: right;
-				gap: 10px;
-				height: 36px;
-				margin-top:0;
-
-				@include for-phone-only {
-					margin-inline: auto;
-					margin-bottom: 2em;
-				}
-				@include for-iphone-se {
-					hieght:40px;
-					margin-bottom: 2em;
-				}
-			}
 			&.screenshots {
 				grid-area: screenshots;
 
 				margin-top: 40px;
-				overflow: hidden;
-				height: 256px;
-				border-radius: 20px;
 
 
-				box-shadow:0 0 20px 0 rgba(9, 9, 9, 0.4);
-
-				.carousel-wrapper {
-					overflow-x: scroll;
-					overflow-y: hidden;
+				h2 {
+					// margin-top: -1em;
+					margin-bottom: 1em;
 				}
 
-				.carousel {
-					display: flex;
-					height: 256px;
-					width:max-content;
-					background-color: var(--page-background-color);
-
-					@include for-phone-only {
-						height: 256px;
-					}
+				.carousel-container {
+					padding-block: 1em;
+					border-radius: 20px;
+					background-color: var(--card-background-color);
+					box-shadow:3px 5px 20px 0 rgba(9, 9, 9, 0.208);
 				}
-
-				@include for-phone-only {
-					margin-top: 10px;
-						height: 256px;
+				.img-container {
+					border-radius: 10px;
 				}
 			}
 			&.releases {
@@ -196,7 +176,7 @@
 				details {
 					background-color: var(--card-background-color);
 					border-radius: 20px;
-					box-shadow: 0 0 16px 0 rgba(8, 8, 8, 0.2);
+					box-shadow: 3px 5px 16px 0 rgba(8, 8, 8, 0.2);
 					padding:1em;
 					margin:2em 0;
 					gap:8px;
@@ -222,8 +202,15 @@
 		}
 	}
 	h1 {
+		font-size: 3.5rem;
+		@include for-tablet-portrait-down {
+			font-size: 3rem;
+		}
 		@include for-phone-only {
 			font-size: 2.5rem;
 		}
+	}
+	h2 {
+		text-align: center;
 	}
 </style>

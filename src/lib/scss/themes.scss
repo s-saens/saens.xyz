@@ -1,5 +1,5 @@
 @mixin light-theme {
-	--nav-alpha: 0.9;
+	--nav-alpha: 0.6;
 	--nav-color: rgba(var(--nav-original-color), var(--nav-alpha));
 	// --nav-color: linear-gradient(0deg,
 	// 	rgba(var(--nav-original-color), 0) 0%,
@@ -100,7 +100,7 @@
 }
 
 @mixin dark-theme {
-	--nav-alpha: 0.3;
+	--nav-alpha: 0.4;
 	--nav-original-color: 0, 0, 0;
 	--nav-text-color: white;
 	

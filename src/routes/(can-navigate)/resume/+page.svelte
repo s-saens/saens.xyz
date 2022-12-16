@@ -4,7 +4,7 @@
 </script>
 
 <div in:fly="{{y:100, duration:1000}}" out:fade class="resume-wrapper">
-	<div style="height:6em"/>
+	<div style="height:4em"/>
 	<Resume />
 </div>
 
