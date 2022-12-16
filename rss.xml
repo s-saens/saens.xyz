@@ -6,8 +6,8 @@
     <description>Developer</description>
     
         <item>
-          <title>Data<T></title>
-          <description>How to handle datas easily.</description>
+          <title>반응형 데이터 클래스 Data<T></title>
+          <description>How to handle datas easily with Data<T> class</description>
           <link>https://saens.xyz/blog/002/</link>
           <pubDate>2022-12-16T00:00:00.000Z</pubDate>
           <category term="Unity" /><category term="C#" /><category term="ScriptableObject" />
