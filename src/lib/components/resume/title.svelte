@@ -1,5 +1,5 @@
 <div class="resume-title">
-	<h1>Sanghun song</h1>
+	<h1>Sanghun</h1>
 	<div style="height:1em;"/>
 	<h5>Programmer</h5>
 </div>

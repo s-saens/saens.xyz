@@ -3,7 +3,6 @@
 	import EmailIcon from '$lib/svg/socials/email.svelte';
 	import PinIcon from '$lib/svg/pin.svelte';
 	import ChatIcon from '$lib/svg/chat.svelte';
-	import InternetIcon from '$lib/svg/internet.svelte';
 	import ExperienceIcon from '$lib/svg/experience.svelte';
 	import StarIcon from '$lib/svg/star.svelte';
 	import { yearsOfExperience } from '$lib/experience';
@@ -19,7 +18,7 @@
 <ul class="resume-contact">
 	<li class="birthday">
 		<span class="icon"><StarIcon /></span>
-		<span>{calcYearsSince('1999-05-26')} years old</span>
+		<span>{calcYearsSince('1999-05-26')} y.o.</span>
 	</li>
 	<li class="experience">
 		<span class="icon"><ExperienceIcon /></span>

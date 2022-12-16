@@ -3,7 +3,7 @@
 	export let path = null;
 	export let filename;
 	export let figcaption = null;
-
+	export let add_style = "";
 	let imageSrc;
 
 	$: imageSrc = `/optimized-images/${path ? path + '/' : ''}${filename}`;
@@ -12,7 +12,7 @@
 <picture>
 	<!-- <source srcset="{imageSrc}.avif" type="image/avif" />
 	<source srcset="{imageSrc}.webp" type="image/webp" /> -->
-	<img src="{imageSrc}.png" {alt} loading="lazy" decoding="async" />
+	<img src="{imageSrc}.png" {alt} loading="lazy" decoding="async" style={add_style}/>
 
 	{#if figcaption}
 		<!-- svelte-ignore a11y-structure -->

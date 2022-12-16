@@ -1,6 +1,4 @@
 <script>
-	export let animated = true;
-
 	let navState = "on";
 	var lastY = 100;
 	let deltaY = 100;
@@ -23,7 +21,7 @@
 		<div class="links clickable">
 			<a href="/blog">Blog</a>
 			<a href="/resume">Resume</a>
-			<!-- <a href="/projects">Projects</a> -->
+			<a href="/projects">Projects</a>
 		</div>
 	</nav>
 </header>
@@ -40,7 +38,7 @@
 
 		nav {
 			transition-duration: 0.3s;
-			
+
 			position: fixed;
 			height: 8em;
 			width:100%;
@@ -50,6 +48,7 @@
 			justify-content: center;
 			background: var(--nav-color);
 			gap: 30px;
+			backdrop-filter: blur(3px);
 
 			a {
 				color: var(--text-color);

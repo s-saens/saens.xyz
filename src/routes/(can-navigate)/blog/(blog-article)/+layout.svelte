@@ -1,6 +1,5 @@
 <script>
 	import '../../../../app.scss';
-	import Footer from '$lib/components/layout/footer.svelte';
 
 	import Image from '$lib/components/base/image.svelte';
 	import Tag from '$lib/components/base/tag.svelte';
@@ -23,7 +22,6 @@
 	<meta property="og:description" content={post.excerpt} />
 	<meta name="twitter:description" content={post.excerpt} />
 
-	<title>{post.title} - {title}</title>
 	<meta property="og:title" content="{post.title} - {title}" />
 	<meta name="twitter:title" content="{post.title} - {title}" />
 

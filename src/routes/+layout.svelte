@@ -1,6 +1,6 @@
 <script>
-	import Topbutton from './../lib/components/layout/topbutton.svelte';
-	import DarkModeToggle from "./../lib/components/layout/darkModeToggle.svelte";
+	import Topbutton from '$lib/components/layout/topbutton.svelte';
+	import DarkModeToggle from "$lib/components/layout/darkModeToggle.svelte";
 	import '../app.scss';
 	import { keywords } from '$lib/meta';
 </script>
@@ -20,19 +20,23 @@
 	@import '../lib/scss/breakpoints.scss';
 
 	.container {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		z-index: 200;
 		position:fixed;
-		display: flex;
-		flex-direction: column;
-		gap: 1em;
+		gap: 0.4em;
+
+		background-color: rgba(var(--page-background-color-rgb), 0.4);
+		backdrop-filter: blur(3px);
 
 		right: 4em;
 		bottom: 4em;
 
-		width: 0;
-		height: auto;
+		width: 80px;
+		height: 160px;
+		border-radius: 50px;
 
 		color: var(--text-color);
 

@@ -9,6 +9,7 @@
 @import './lib/scss/code-highlights.scss';
 
 body {
+	user-select: none;
 	--body-background-color: var(--page-background-color);
 	--body-background-color-rgb: var(--page-background-color-rgb);
 	background-color: var(--body-background-color);
@@ -43,6 +44,10 @@ html {
 
 path {
 	stroke: var(--text-color);
+}
+
+img {
+	-webjit-user-drag: none;
 }
 
 @import './lib/scss/markdown.scss';

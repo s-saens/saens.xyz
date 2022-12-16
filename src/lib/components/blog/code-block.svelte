@@ -15,6 +15,7 @@
 
 <style lang="scss">
 	.code-block {
+		user-select: all;
 		display: block;
 		position: relative;
 		background-color: var(--code-background-color);

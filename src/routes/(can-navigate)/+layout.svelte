@@ -12,7 +12,6 @@
 	<meta property="og:description" content={description} />
 	<meta name="twitter:description" content={description} />
 
-	<title>{title}</title>
 	<meta property="og:title" content={title} />
 	<meta name="twitter:title" content={title} />
 
