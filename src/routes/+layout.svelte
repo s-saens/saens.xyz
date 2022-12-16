@@ -3,6 +3,7 @@
 	import DarkModeToggle from "$lib/components/layout/darkModeToggle.svelte";
 	import '../app.scss';
 	import { keywords } from '$lib/meta';
+	import CarouselScroller from '../lib/components/base/carousel-scroller.svelte';
 </script>
 
 <svelte:head>

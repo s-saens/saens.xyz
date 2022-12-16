@@ -4,6 +4,7 @@
 	import Android_Icon from '../../svg/store-links/android_icon.svelte';
 	import Default_Icon from '../../svg/store-links/default_icon.svelte';
 	import Image from '../base/image.svelte';
+	import CarouselScroller from '../base/carousel-scroller.svelte';
 	export let project;
 
 	function determinePlatform(path) {
@@ -48,6 +49,7 @@
 		</div>
 	</section>
 </article>
+<CarouselScroller/>
 
 <style lang="scss">
 	@import '../../scss/breakpoints.scss';
