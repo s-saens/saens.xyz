@@ -1,8 +1,8 @@
 <script>
-	import { fade } from "svelte/transition";
+	import { fly, fade } from "svelte/transition";
 </script>
 
-<section id="hero" in:fade out:fade>
+<section id="hero" in:fly="{{y:100, duration:1000}}" out:fade>
 	<p class="intro">
 		<span>WORK LESS</span>
 		<span>PERFORM BETTER</span>

@@ -21,6 +21,3 @@
 		</div>
 	</Section>
 </section>
-
-<style>
-</style>

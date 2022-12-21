@@ -39,7 +39,7 @@
 	<section class="screenshots">
 		<h2 style="text-align: center">Screenshots</h2>
 		<div class="carousel-container">
-		<Carousel height="256px">
+		<Carousel h="256px">
 			{#each project.screenshots as i}
 				<div class="img-container">
 				<Image  path="projects/{project.title}"
@@ -55,7 +55,7 @@
 		{#each project.releases as r}
 			<details>
 				<summary>
-					<b>{r.version}</b> - {r.date}
+					<b>&nbsp v.{r.version}</b> - {r.date}
 				</summary>
 				
 				<ul>
@@ -158,7 +158,7 @@
 				}
 
 				.carousel-container {
-					padding-block: 1em;
+					padding: 1em;
 					border-radius: 20px;
 					background-color: var(--card-background-color);
 					box-shadow:3px 5px 20px 0 rgba(9, 9, 9, 0.208);

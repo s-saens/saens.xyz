@@ -22,17 +22,16 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 		z-index: 200;
 		position:fixed;
-		gap: 0.4em;
 
 		background-color: rgba(var(--page-background-color-rgb), 0.4);
 		backdrop-filter: blur(3px);
 
-		right: 4em;
-		bottom: 4em;
+		right: 3em;
+		bottom:3em;
 
 		width: 80px;
 		height: 160px;
@@ -41,8 +40,10 @@
 		color: var(--text-color);
 
 		@include for-tablet-portrait-down {
-			right: 2em;
-			bottom: 2em;
+			width: 70px;
+			height: 140px;
+			right: 1em;
+			bottom:1em;
 		}
 	}
 </style>

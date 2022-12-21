@@ -15,8 +15,10 @@
 				<a href="https://kit.svelte.dev/" target="_blank" rel="noopener">SvelteKit</a>
 			and
 				<a href="https://github.com/matfantinel/matfantinel.github.io" target="_blank" rel="noopener">Matt Fantinel's project</a>.
+			<br/>
 			Icons by
-				<a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>.
+				<a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>. 
+				Privacy policy <a href="/privacy/en">here</a>
 		</div>
 		<div class="socials">
 			<Socials />

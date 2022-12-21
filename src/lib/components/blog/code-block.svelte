@@ -26,17 +26,18 @@
 		border-radius: 8px;
 		box-shadow: var(--card-shadow);
 
-		padding: 30px 15px;
+		padding: 25px 30px;
 		margin: 30px 0;
 
 		:global(pre) {
 			overflow-x: auto;
 			scrollbar-color: var(--primary-color) var(--scrollbar-track-color);
-			scrollbar-width: thin;
+			scrollbar-width: auto;
 			padding-bottom: 5px;
 
 			&::-webkit-scrollbar {
-				height: 8px;
+				height: 10px;
+				padding:0;
 			}
 			&::-webkit-scrollbar-thumb {
 				background: var(--primary-color);
@@ -49,7 +50,7 @@
 		.lang {
 			position: absolute;
 			right: 0;
-			top: -15px;
+			top: -20px;
 			background: inherit;
 			border-radius: 8px;
 			padding: 5px 10px;
@@ -62,11 +63,13 @@
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
 			margin-bottom: -2px;
-			padding: 5px 10px;
+			padding: 7px 15px;
+			border-radius: 8px;
 			position: absolute;
-			left: 0px;
-			top: -15px;
+			left: 0;
+			top: -20px;
 			z-index: 1;
+			font-size: 0.9rem;
 		}
 	}
 </style>
