@@ -6,8 +6,6 @@
     import { page } from '$app/stores';
 
 	const lang = $page.params.lang;
-
-	console.log($page);
 	
     let privacy = allPrivacies.find((p)=> {
         return p.lang == lang;
