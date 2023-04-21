@@ -15,9 +15,32 @@ const entries = [
 			'1',
 			'2',
 			'3',
-			'4'
+			'4',
+			'5',
+			'6',
+			'7',
+			'8',
 		],
 		releases: [
+			{
+				version: '1.064',
+				date: '2023.4.6',
+				changes: [
+					'Google Play Games, Apple login',
+					'Ranking system',
+					'Cloud Saving system',
+				]
+			},
+			{
+				version: '1.042',
+				date: '2023.3.2',
+				changes: [
+					'Score system applied',
+					'Blackhole issue fix: previously, it inhaled the ball even when it is disappeared.',
+					`Modify in starting from a certain floor.`,
+					'UI update.',
+				]
+			},
 			{
 				version: '1.020',
 				date: '2023.1.20',
