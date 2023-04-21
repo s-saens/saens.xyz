@@ -19,6 +19,19 @@ const entries = [
 		],
 		releases: [
 			{
+				version: '1.020',
+				date: '2023.1.20',
+				changes: [
+					'New obstacles are added!',
+					'Season system is applied: If an update has some changes on difficulty, new season starts and your records of previous versions will be stashed. (Cloud saving is not supported yet.)',
+					'Initial invincibility now lasts 10 seconds, and it disappears whenever you use joystick.',
+					'Countdown appears when you close menu in game.',
+					'Obstacle sound effects now adopt spatial blend features.',
+					'Minor UI changes.',
+					'Harder than before.',
+				]
+			},
+			{
 				version: '1.010',
 				date: '2022.12.9',
 				changes: [

@@ -5,7 +5,7 @@
 	// 	rgba(var(--nav-original-color), 0) 0%,
 	// 	rgba(var(--nav-original-color), 0.8) 100%);
 	--nav-original-color: 255, 255, 255;
-	--nav-text-color: black;
+	--nav-text-color: rgb(21, 21, 21);
 
 	--primary-color: rgb(127, 105, 251);
 	--primary-color-rgb: 112, 88, 245;
@@ -78,7 +78,7 @@
 	--scrollbar-thumb-color: #9e9e9e;
 	--scrollbar-track-color: #cdcdcd;
 
-	--callout-background-color: var(--page-background-color);
+	--callout-background-color: #f5f5f5b8;
 	--callout-info-background-color: #dfeffd; //blue 100
 	--callout-info-accent-color: #2883f4; //blue 500
 	--callout-warning-background-color: #fff6b6;
@@ -104,6 +104,7 @@
 	--nav-original-color: 0, 0, 0;
 	--nav-text-color: white;
 	
+	--primary-color: rgb(129, 127, 255);
 	--primary-color-contrast: #1c1e26;
 
 	--primary-light-color: rgb(61, 51, 121);
@@ -156,7 +157,7 @@
 
 	--highlight-marker-url: #{"url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=0D6970')"};
 
-	--callout-background-color: var(--page-background-color);
+	--callout-background-color: #5d686860;
 	--callout-info-background-color: #1d3874; //blue 900
 	--callout-info-accent-color: #6ca9f7; //blue 400
 	--callout-warning-background-color: #724413;

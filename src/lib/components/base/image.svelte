@@ -1,5 +1,5 @@
 <script>
-	export let alt;
+	export let alt = "image is not loaded";
 	export let path = null;
 	export let filename;
 	export let figcaption = null;
