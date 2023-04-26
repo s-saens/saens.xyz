@@ -36,7 +36,7 @@ const entries = [
 				date: '2023.3.2',
 				changes: [
 					'Score system applied',
-					'Blackhole issue fix: previously, it inhaled the ball even when it is disappeared.',
+					'Blackhole issue fix',
 					`Modify in starting from a certain floor.`,
 					'UI update.',
 				]
@@ -46,8 +46,8 @@ const entries = [
 				date: '2023.1.20',
 				changes: [
 					'New obstacles are added!',
-					'Season system is applied: If an update has some changes on difficulty, new season starts and your records of previous versions will be stashed. (Cloud saving is not supported yet.)',
-					'Initial invincibility now lasts 10 seconds, and it disappears whenever you use joystick.',
+					'Season system is applied',
+					'Modify in invincibility logic',
 					'Countdown appears when you close menu in game.',
 					'Obstacle sound effects now adopt spatial blend features.',
 					'Minor UI changes.',
