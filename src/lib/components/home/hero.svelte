@@ -43,9 +43,10 @@
 		}
 
 		.intro {
-			font-family: var(--mono-font);
+			font-family: var(--default-font);
+			font-weight: 200;
 			font-size: 1.4rem;
-			width: min(100%, 440px);
+			width: min(100%, 300px);
 			display: flex;
 			flex-direction: column;
 			text-align: center;

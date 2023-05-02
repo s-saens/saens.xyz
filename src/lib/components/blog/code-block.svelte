@@ -7,9 +7,6 @@
 	<summary><b>{filename ? filename : "Code"}</b></summary>
 	<div class="code-block">
 		<div class="container">
-			<!-- {#if filename}
-				<div class="filename">{filename}</div>
-			{/if} -->
 			{#if lang}
 				<div class="lang">{lang}</div>
 			{/if}

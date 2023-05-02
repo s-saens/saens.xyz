@@ -10,8 +10,6 @@
 </script>
 
 <picture>
-	<!-- <source srcset="{imageSrc}.avif" type="image/avif" />
-	<source srcset="{imageSrc}.webp" type="image/webp" /> -->
 	<img src="{imageSrc}.png" {alt} loading="lazy" decoding="async" style={add_style}/>
 
 	{#if figcaption}
