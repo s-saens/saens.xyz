@@ -3,7 +3,7 @@
 	import Sun from "../../svg/sun.svelte";
 
 	const class_dark_mode = "dark-mode";
-	let nowDarkmode = class_dark_mode;
+	let nowDarkmode = " ";
 
 	function toggle()
 	{

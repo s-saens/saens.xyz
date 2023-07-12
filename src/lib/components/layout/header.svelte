@@ -19,9 +19,9 @@
 			S A E N S 
 		</a>
 		<div class="links clickable">
-			<a href="/blog">Blog</a>
-			<a href="/resume">Resume</a>
+			<a href="https://saens.tistory.com">Blog</a>
 			<a href="/projects">Projects</a>
+			<a href="/resume">Resume</a>
 		</div>
 	</nav>
 </header>
@@ -37,8 +37,7 @@
 		}
 
 		nav {
-			transition-duration: 0.3s;
-
+			transition: all 0.3s ease;
 			position: fixed;
 			height: 8em;
 			width:100%;
@@ -55,7 +54,7 @@
 			}
 			a:hover {
 				text-decoration: none;
-				text-shadow:  rgba(200, 200, 200, 1) 0px 0 7px;
+				text-shadow:  rgb(185, 185, 185) 0 0 15px;
 			}
 
 

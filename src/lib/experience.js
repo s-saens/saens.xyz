@@ -14,9 +14,12 @@ export const entries = [
 		projects: [
 			{
 				title: 'iMaze',
-				link: '',
 				link: '/projects/iMaze',
 				desc: 'Built a hyper-casual game with Unity from scratch. Automated build and deployment processes with Jenkins.'
+			},
+			{
+				title: 'Svelte Homepage',
+				desc: 'Built this homepage. Overall template is made by Matt Fantinel with SvelteKit and I customized.'
 			}
 		],
 		tags: [

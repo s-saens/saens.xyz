@@ -5,17 +5,25 @@
 			<span class="tag">Unity</span>
 			<span class="tag">C#</span>
 			<span class="tag">C++</span>
-			<span class="tag">Java</span>
+			<span class="tag">Firebase</span>
 			<span class="tag">Algorithm</span>
+		</div>
+	</li>
+	<li>
+		Now immersed in...
+		<div class="tags-container">
+			<span class="tag secondary">Flutter</span>
+			<span class="tag secondary">Go</span>
 		</div>
 	</li>
 	<li>
 		Little bit of...
 		<div class="tags-container">
-			<span class="tag secondary">Jenkins</span>
-			<span class="tag secondary">Go</span>
-			<span class="tag secondary">Javascript</span>
-			<span class="tag secondary">Svelte</span>
+			<span class="tag third">Jenkins</span>
+			<span class="tag third">Javascript</span>
+			<span class="tag third">Java</span>
+			<span class="tag third">Svelte</span>
+			<span class="tag third">Flutter</span>
 		</div>
 	</li>
 </ul>
@@ -50,6 +58,11 @@
 			background-color: var(--secondary-lightest-color);
 			border: 1px solid var(--secondary-color);
 			color: var(--secondary-color);
+		}
+		&.third {
+			background-color: var(--background-color);
+			border: 1px solid var(--text-light-color);
+			color: var(--text-light-color);
 		}
 	}
 </style>

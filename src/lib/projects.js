@@ -9,7 +9,7 @@ const entries = [
 			'https://apps.apple.com/us/app/imaze/id6443496386',
 		],
 		desc: `
-			Players should make a ball escape mazes that will be generated randomly.
+			Hyper-casual maze escaping game.
 		`,
 		screenshots: [
 			'1',
@@ -22,6 +22,18 @@ const entries = [
 			'8',
 		],
 		releases: [
+			{
+				version: '1.091',
+				date: '2023.6.1',
+				changes: [
+					'Coin and skin system added.',
+					'From now on, the difficulty will change, but the seasons will not be updated.',
+					'Increased acceleration and reduced slipping.',
+					'Fixed intermittent frame rate drops.',
+					'Fixed the issue where the ranking UI was not updating properly.',
+					'Fixed the issue where logged-in user\'s data is reset when reinstalling the app.'
+				]
+			},
 			{
 				version: '1.064',
 				date: '2023.4.6',
@@ -77,44 +89,6 @@ const entries = [
 			'Jenkins',
 		]
 	},
-	// {
-	// 	title: 'Blog',
-	// 	prefix: '',
-	// 	category: 'Web',
-	// 	start: 2022-12-8,
-	// 	links: [
-	// 		'https://saens.xyz'
-	// 	],
-	// 	desc: `
-	// 		Blog for posting my works or thoughts.
-	// 	`,
-	// 	images: {
-	// 		cover: '',
-	// 		screenshots: [
-	// 			'',
-	// 			''
-	// 		]
-	// 	},
-	// 	releases: [
-	// 	],
-	// 	tags: [
-	// 		'Svelte',
-	// 	]
-	// }
-	// {
-	// 	title: 'Ilarm',
-	// 	prefix: 'Life-style',
-	// 	category: 'Mobile Application',
-	// 	start: 2023-2-10,
-	// 	links: {
-	// 		'Android': '',
-	// 		'iOS': ''
-	// 	},
-	// 	stack: [
-	// 		'Flutter',
-	// 		'Redis'
-	// 	]
-	// }
 ];
 
 export default entries;
