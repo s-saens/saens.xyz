@@ -14,11 +14,21 @@
 		[`It always seems impossible until it's done.`, `Nelson Mandela`]
 	];
 
-	let index = Math.floor(Math.random() * sayings.length);
+	let lastIndex = 0;
+	let index = 0;
+
+	function SetRandomSayingIndex() {
+		while(lastIndex == index) {
+			index = Math.floor(Math.random() * sayings.length);
+		}
+		lastIndex = index;
+	}
+
+	SetRandomSayingIndex();
 </script>
 
 <section id="hero" in:fly="{{y:100, duration:1000}}" out:fade>
-	<p class="intro">
+	<p class="intro" on:click={SetRandomSayingIndex}>
 		<span>{sayings[index][0]}</span>
 		<br/>
 		<span>- {sayings[index][1]} -</span>
@@ -56,5 +66,12 @@
 				text-align: center;
 			}
 		}
+	}
+
+	.intro:hover {
+		cursor: pointer;
+		transform: scale(1.01);
+		font-weight: 700;
+		text-shadow: rgb(225, 225, 225) 0px 0px 2px;
 	}
 </style>
