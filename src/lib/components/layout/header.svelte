@@ -1,4 +1,6 @@
 <script>
+	import Logo from "../../svg/logo.svelte";
+
 	let navState = "on";
 	var lastY = 100;
 	let deltaY = 100;
@@ -16,7 +18,7 @@
 <header>
 	<nav class={navState}>
 		<a class="logo clickable" href="/" alt="Site logo">
-			S A E N S 
+			<Logo/>
 		</a>
 		<div class="links clickable">
 			<a href="https://saens.tistory.com">Blog</a>
