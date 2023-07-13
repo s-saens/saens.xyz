@@ -24,6 +24,7 @@
 	}
 	#logo:hover {
 		transform: scale(1.01);
+		filter: drop-shadow(0px 0px 4px rgb(195, 195, 195));
 	}
 
 	#icon {
