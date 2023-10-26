@@ -7,14 +7,12 @@
 
 	const lang = $page.params.lang;
 	
-    let privacy = allPrivacies.find((p)=> {
-        return p.lang == lang;
-    });
+    let privacy = allPrivacies[lang];
 </script>
 
 <Header/>
 <div in:fly="{{y:100, duration:1000}}" out:fade class="container">
-	<pre id='content'>{privacy.content}</pre>
+	<pre id='content'>{privacy}</pre>
 </div>
 <Footer/>
 

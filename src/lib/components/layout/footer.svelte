@@ -18,7 +18,7 @@
 			<br/>
 			Icons by
 				<a href="https://iconoir.com/" target="_blank" rel="noopener">Iconoir</a>. 
-				Privacy policy <a href="/privacy/en">here</a>
+				Privacy policy <a href="/privacy/">here</a>
 		</div>
 		<div class="socials">
 			<Socials />

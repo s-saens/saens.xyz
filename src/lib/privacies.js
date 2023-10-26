@@ -1,7 +1,5 @@
-const entries = [
-    {
-        lang: 'ko',
-        content: `
+const entries = {
+    ko: `
 SAENS는 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다.
 
 ○ 이 개인정보처리방침은 2022년 9월 26일부터 적용됩니다.
@@ -132,12 +130,12 @@ SAENS는 정보주체의 개인정보 열람청구가 신속하게 처리되도�
 
 제12조(개인정보 처리방침 변경)
 
-① 이 개인정보처리방침은 2022년 9월 26부터 적용됩니다.
-        `
-    },
-    {
-        lang: 'en',
-        content: `
+① 이 개인정보처리방침은 2022년 9월 26부터 적용됩니다.`,
+
+
+
+
+    en: `
 In accordance with Article 30 of the Personal Information Protection Act, SAENS establishes and discloses personal information processing policies as follows to protect personal information of information subjects and to handle related grievances quickly and smoothly.
 
 ○ This personal information processing policy will take effect from September 26, 2022.
@@ -268,10 +266,8 @@ A person who has been infringed on his/her rights or interests due to dispositio
 
 Article 12 (Change of Personal Information Processing Policy)
 
-① This personal information processing policy will be applied from September 26, 2022.
-        `
-    }
-];
+① This personal information processing policy will be applied from September 26, 2022.`,
+};
 
 
 export default entries;

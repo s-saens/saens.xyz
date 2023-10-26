@@ -12,8 +12,6 @@
 {/if}
 
 <style lang="scss">
-	@import '../../../lib/scss/breakpoints.scss';
-
 	a {
 		transition: all 0.3s ease;
 	}
