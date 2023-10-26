@@ -11,9 +11,6 @@
     <loc>https://saens.xyz/blog/</loc>
   </url>
   <url>
-    <loc>https://saens.xyz/digital-tools/</loc>
-  </url>
-  <url>
     <loc>https://saens.xyz/privacy/</loc>
   </url>
   <url>
@@ -27,6 +24,9 @@
   </url>
   <url>
     <loc>https://saens.xyz/privacy/en/</loc>
+  </url>
+  <url>
+    <loc>https://saens.xyz/privacy/ko/</loc>
   </url>
   <url>
     <loc>https://saens.xyz/projects/iMaze/</loc>
