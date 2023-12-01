@@ -88,4 +88,12 @@
 			transform: translateY(-9em);
 		}
 	}
+
+
+	// Print-specific styles
+	@media print {
+		header {
+			display: none;
+		}
+	}
 </style>

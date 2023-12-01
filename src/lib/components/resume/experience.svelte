@@ -1,6 +1,5 @@
 <script>
 	import PinIcon from '$lib/svg/pin.svelte';
-	import CircleIcon from '$lib/svg/circle.svelte';
 	import LowAccentHighlight from '$lib/components/style/low-accent-highlight.svelte';
 	import { entries } from '$lib/experience';
 
@@ -9,15 +8,7 @@
 
 <div class="resume-experience">
 	{#each entries as entry}
-		<div class="experience" class:current={entry.current}>
-			<div class="timeline">
-				<div class="time">
-					{#if entry.current}Current{/if}
-					<CircleIcon />
-					{entry.timeframe.split(' ')[0]}
-				</div>
-				<div class="line" />
-			</div>
+		<div class="experience">
 			<div class="content">
 				<div class="title">
 					<div>
@@ -25,17 +16,18 @@
 							<LowAccentHighlight id={entry.id}>{entry.title}</LowAccentHighlight>
 						</span>
 					</div>
-					<small>{entry.jobTitle} | <span class="icon"><PinIcon /></span> {entry.location}</small>
+					<small>{entry.timeframe} | {entry.jobTitle} | <span class="icon"><PinIcon /></span> {entry.location}</small>
 				</div>
 
 				<ul>
 				{#each entry.projects as project}
 				<li>
-					<p class="project-title">{project.title}
+					<div class="project-title">
+						{project.title}
 						{#if project.link != ''}
 							<a href={project.link} class="project-link"><Link/></a>
 						{/if}
-					</p>
+					</div>
 					
 					<p class="project-desc">{project.desc}</p>
 					</li>
@@ -47,67 +39,9 @@
 </div>
 
 <style lang="scss">
-	.resume-experience {
 		.experience {
 			display: flex;
 			gap: 10px;
-
-			.timeline {
-				width: 60px;
-				margin-bottom: -16px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-
-				.line {
-					border-left: 2px dashed var(--primary-color);
-					width: 2px;
-					flex: 1;
-				}
-
-				.time {
-					color: var(--text-light-color);
-					width: 24px;
-					padding: 2px;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					gap: 2px;
-					font-size: 12px;
-					word-wrap: none;
-					white-space: nowrap;
-
-					:global(svg) {
-						width: 20px;
-						height: 20px;
-						color: var(--primary-color);
-					}
-				}
-			}
-
-			&.current {
-				.time {
-					:global(svg) {
-						padding: 2px;
-						background: var(--card-background-color);
-						border: 1px solid var(--primary-color);
-						border-radius: 50%;
-						fill: var(--primary-color);
-					}
-				}
-			}
-
-			&:not(:last-child) {
-				padding-bottom: 16px;
-			}
-
-			&:last-child {
-				.timeline {
-					.line {
-						display: none;
-					}
-				}
-			}
 
 			.content {
 				flex: 1;
@@ -146,17 +80,25 @@
 				text-align: justify;
 			}
 		}
-		.project-link {
-			align-items: center;
-			width: 32px;
-			height: 32px;
-		}
 		.project-title {
+			display: flex;
+			align-items: center;
 			font-weight: 500;
+
+			a {
+				margin-left: 6px;
+				width: 16px;
+				height: 16px;
+				transition: all 0.1s ease-in-out;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
 		}
 		.project-desc {
 			font-size: 14px;
-			padding: -40px;
+			padding-bottom: 10px;
 			margin: 0;
 			font-weight: 200;
 			color: var(--text-second-light-color);
@@ -165,5 +107,4 @@
 		ul {
 			margin-left: 1em;
 		}
-	}
 </style>

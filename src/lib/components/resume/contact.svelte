@@ -120,21 +120,5 @@
 				}
 			}
 		}
-
-		// Print-specific styles
-		@media print {
-			grid-template-areas:
-				'location languages'
-				'birthday email'
-				'experience website';
-
-			.github {
-				display: none;
-			}
-
-			a {
-				border: none !important;
-			}
-		}
 	}
 </style>

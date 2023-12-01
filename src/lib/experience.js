@@ -6,11 +6,10 @@ export const yearsOfExperience = Math.abs(
 export const entries = [
 	{
 		id: 'freelancer',
-		title: 'Freelancer',
-		jobTitle: 'Free Developer',
-		timeframe: '2022 → Now',
-		current: true,
-		location: 'Home',
+		title: 'Freelance Developer',
+		jobTitle: 'Sole Proprietor from Nov 2022',
+		timeframe: 'Feb 2022 ~ Now',
+		location: 'Jeongeup',
 		projects: [
 			{
 				title: 'iMaze',
@@ -19,7 +18,8 @@ export const entries = [
 			},
 			{
 				title: 'Svelte Homepage',
-				desc: 'Built this homepage. Overall template is made by Matt Fantinel with SvelteKit and I customized.'
+				link: '/',
+				desc: 'Built this homepage. Overall template was made by Matt Fantinel with SvelteKit and I customized.'
 			}
 		],
 		tags: [
@@ -37,17 +37,17 @@ export const entries = [
 		id: 'gamespring',
 		title: 'GameSpring',
 		jobTitle: 'Unity Client Programmer',
-		timeframe: '2021 → 2022',
+		timeframe: 'Apr 2021 ~ Nov 2021',
 		location: 'Seoul',
 		projects: [
 			{
 				title: 'Dragon Ace Casino - Baccarat (Google Instant)',
-				link: '',
+				link: 'https://play.google.com/store/apps/details?id=com.gamespring.dac&hl=en&gl=US',
 				desc: 'Built the first Google Instant version of Dragon Ace Baccarat.'
 			},
 			{
 				title: 'Dragon Ace Casino - Slot',
-				link: '',
+				link: 'https://play.google.com/store/apps/details?id=com.gamespring.dac&hl=en&gl=US',
 				desc: 'Built the first and second versions of Slot games in Dragon Ace Casino.'
 			}
 		],

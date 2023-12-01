@@ -46,4 +46,11 @@
 			bottom:1em;
 		}
 	}
+
+
+	@media print {
+		.container {
+			display: none;
+		}
+	}
 </style>

@@ -6,7 +6,6 @@
 			<span class="tag">C#</span>
 			<span class="tag">C++</span>
 			<span class="tag">Firebase</span>
-			<span class="tag">Algorithm</span>
 		</div>
 	</li>
 	<li>
@@ -23,7 +22,6 @@
 			<span class="tag third">Javascript</span>
 			<span class="tag third">Java</span>
 			<span class="tag third">Svelte</span>
-			<span class="tag third">Flutter</span>
 		</div>
 	</li>
 </ul>
@@ -37,7 +35,8 @@
 
 	.tags-container {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+
+		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 		margin: 2px 0 5px;
 	}
 

@@ -13,4 +13,14 @@
 			box-sizing: border-box;
 		}
 	}
+
+
+	// Print-specific styles
+	@media print {
+		.resume-photo {
+			img {
+				box-shadow: none;
+			}
+		}
+	}
 </style>

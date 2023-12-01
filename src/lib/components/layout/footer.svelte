@@ -1,5 +1,4 @@
 <script>
-	import FooterWave from '$lib/svg/footer-wave.svelte';
 	import Socials from '$lib/components/base/socials.svelte';
 
 	let currentYear = new Date().getFullYear();
@@ -49,6 +48,12 @@
 				font-size: 90%;
 				color: var(--text-light-color);
 			}
+		}
+	}
+
+	@media print {
+		footer {
+			display: none;
 		}
 	}
 </style>

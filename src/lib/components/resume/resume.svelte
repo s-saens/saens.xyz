@@ -5,6 +5,7 @@
 	import Title from './title.svelte';
 	import Skills from './skills.svelte';
 	import Experience from './experience.svelte';
+	import Prizes from './prizes.svelte';
 </script>
 
 <article class="resume">
@@ -16,8 +17,16 @@
 		<Photo />
 	</section>
 	<section class="work">
-		<SectionTitle>Professional Experiences</SectionTitle>
+		<SectionTitle>Experiences</SectionTitle>
 		<Experience />
+	</section>
+	<section class="prizes">
+		<SectionTitle>Prizes</SectionTitle>
+		<Prizes />
+	</section>
+	<section class="skills">
+		<SectionTitle>Skills</SectionTitle>
+		<Skills />
 	</section>
 	<section class="education">
 		<SectionTitle>Education</SectionTitle>
@@ -25,15 +34,10 @@
 		<p>2019~2020</p>
 		<p>4 semesters</p>
 	</section>
-	<section class="skills">
-		<SectionTitle>Skills</SectionTitle>
-		<Skills />
-	</section>
 </article>
 
 <style lang="scss">
 	.resume {
-		padding: 4em 1em 4em 1em;
 		color: var(--text-color);
 		font-size: 16px;
 		position: relative;
@@ -41,37 +45,38 @@
 		max-width: 960px;
 		margin: 0 auto;
 
+		padding: 4em 1em 4em 1em;
 		display: grid;
-		gap: 20px 30px;
-		grid-template-columns: 1fr;
+
 		grid-template-areas:
 			'photo'
 			'name'
-			'skills'
 			'work'
+			'prizes'
+			'skills'
 			'education';
 
 		@media (min-width: 768px), print {
 			padding: 4em 4em;
 			grid-template-columns: 2fr 1fr;
-			grid-template-rows: 2fr 2fr 1fr;
+			gap: 20px 30px;
 
 			grid-template-areas:
 				'name photo'
 				'work skills'
 				'work education'
+				'prizes prizes'
 		}
 
 		section {
-			padding: 5px;
-			// margin: 10px;
+			padding: 5px 5px 1em 5px;
 			border-radius: 10px;
 
 			&.name-and-contact {
+				margin-bottom: 3em;
 				grid-area: name;
 				display: flex;
 				flex-direction: column;
-				// justify-content: space-between;
 			}
 			&.photo {
 				grid-area: photo;
@@ -81,6 +86,7 @@
 			}
 			&.work {
 				grid-area: work;
+				margin-bottom: 3em;
 			}
 			&.education {
 				grid-area: education;
@@ -92,6 +98,9 @@
 			&.skills {
 				grid-area: skills;
 			}
+			&.prizes {
+				grid-area: prizes;
+			}
 		}
 	}
 
@@ -100,13 +109,11 @@
 		.resume {
 			box-shadow: none;
 			margin: 0;
-			padding: 10px 10px;
-			max-height: 287mm;
 			overflow: hidden;
+		}
 
-			section {
-				margin: 0;
-			}
+		.prizes {
+			margin-top: 6em;
 		}
 	}
 
