@@ -4,16 +4,5 @@
     <title>SAENS</title>
     <link>https://saens.xyz</link>
     <description>Developer</description>
-    
-        <item>
-          <title>반응형 데이터 쉽게 다루기</title>
-          <description>How to handle datas easily with Data<T> class</description>
-          <link>https://saens.xyz/blog/002/</link>
-          <pubDate>2022-12-16T00:00:00.000Z</pubDate>
-          <category term="Unity" /><category term="C#" /><category term="ScriptableObject" />
-          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://saens.xyz/images/posts/002/cover.jpg"/>
-          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://saens.xyz/images/posts/002/cover.jpg"/>
-        </item>
-      
   </channel>
 </rss>
